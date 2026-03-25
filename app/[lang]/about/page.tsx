@@ -1,40 +1,47 @@
 /* eslint-disable @next/next/no-img-element */
-import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 
-export const metadata: Metadata = {
-  title: "About | Architectural Portfolio",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  if (!hasLocale(lang)) return {};
+  const dict = await getDictionary(lang);
+  return { title: dict.metadata.aboutTitle };
+}
 
-export default function AboutPage() {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  if (!hasLocale(lang)) notFound();
+  const dict = await getDictionary(lang as Locale);
+  const t = dict.about;
+
   return (
     <main className="pt-32 pb-24 px-8 max-w-7xl mx-auto">
       {/* Hero Section */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-32">
         <div className="lg:col-span-7">
           <span className="uppercase tracking-widest text-secondary font-semibold mb-4 block text-sm">
-            Senior Fullstack Developer
+            {t.subtitle}
           </span>
           <h1 className="text-[3.5rem] font-extrabold tracking-tighter leading-none mb-8 text-primary">
-            About Me
+            {t.title}
           </h1>
           <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed">
-            <p>
-              I am a senior engineering leader specializing in high-performance
-              mobile ecosystems and scalable fullstack architecture. With over a
-              decade of experience, I bridge the gap between high-level business
-              strategy and granular code execution.
-            </p>
-            <p>
-              My focus lies in building resilient mobile-first platforms that
-              prioritize developer experience, performance, and long-term
-              maintainability. I thrive at the intersection of complex
-              architectural decision-making and hands-on engineering leadership.
-            </p>
+            <p>{t.p1}</p>
+            <p>{t.p2}</p>
           </div>
         </div>
         <div className="lg:col-span-5 aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low shadow-sm relative group">
           <img
-            alt="Professional portrait"
+            alt={t.portraitAlt}
             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4eMlGdhOuT0Cp-1hC43xXT7UHuqs3LbU5B7Py93JzeRJig7P8njtISuhueFD0vljLYCU84px2u8ZwFF99oudzal1taf4pSltXpmDr131PUuD1u-JSWRUdTcFuK1vQJ3RAwRW1B1JlWpO45wr8r-Qq8mpLsQ5rFIyK5g-2325QYP7zQEeUULh8o2G4dTNOx3vN2oKtkpA_NyrlArWZMvICIP7NW737KH0W-OGwRyIqKorAtYobesEE-X9vPOvK33DUwAZiSa1GMskg"
           />
@@ -42,14 +49,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Philosophy Section - Asymmetric Layout */}
+      {/* Philosophy Section */}
       <section className="mb-32">
         <div className="bg-surface-container-low rounded-xl p-12 lg:p-20 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-primary-container/5 -skew-x-12 transform translate-x-20"></div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
             <div className="lg:col-span-4">
               <h2 className="text-2xl font-bold text-primary mb-4">
-                My Philosophy
+                {t.philosophyTitle}
               </h2>
               <div className="w-12 h-1 bg-primary mb-8"></div>
             </div>
@@ -60,12 +67,10 @@ export default function AboutPage() {
                     architecture
                   </span>
                   <h3 className="text-xl font-bold text-primary-container">
-                    Architectural Integrity
+                    {t.archTitle}
                   </h3>
                   <p className="text-on-surface-variant text-base leading-relaxed">
-                    I believe code is a liability until it&apos;s proven as an
-                    asset. I prioritize structural patterns that allow teams to
-                    move fast without breaking fundamental system invariants.
+                    {t.archDesc}
                   </p>
                 </div>
                 <div className="space-y-4">
@@ -73,12 +78,10 @@ export default function AboutPage() {
                     precision_manufacturing
                   </span>
                   <h3 className="text-xl font-bold text-primary-container">
-                    Strategic Precision
+                    {t.precisionTitle}
                   </h3>
                   <p className="text-on-surface-variant text-base leading-relaxed">
-                    Every technical decision is a business decision. I weigh the
-                    long-term maintenance costs of libraries and frameworks
-                    against immediate feature velocity.
+                    {t.precisionDesc}
                   </p>
                 </div>
                 <div className="space-y-4">
@@ -86,12 +89,10 @@ export default function AboutPage() {
                     terminal
                   </span>
                   <h3 className="text-xl font-bold text-primary-container">
-                    Code as Craft
+                    {t.craftTitle}
                   </h3>
                   <p className="text-on-surface-variant text-base leading-relaxed">
-                    Quality is not an afterthought; it&apos;s a prerequisite. I
-                    advocate for rigorous testing, automated CI/CD pipelines, and
-                    expressive, self-documenting codebases.
+                    {t.craftDesc}
                   </p>
                 </div>
                 <div className="space-y-4">
@@ -99,12 +100,10 @@ export default function AboutPage() {
                     groups
                   </span>
                   <h3 className="text-xl font-bold text-primary-container">
-                    Human Centricity
+                    {t.humanTitle}
                   </h3>
                   <p className="text-on-surface-variant text-base leading-relaxed">
-                    Systems are built by people. I focus on reducing cognitive
-                    load for developers through consistent APIs and clear
-                    documentation standards.
+                    {t.humanDesc}
                   </p>
                 </div>
               </div>
@@ -113,12 +112,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Beyond the Code Section - Bento Grid Style */}
+      {/* Beyond the Code Section */}
       <section>
         <div className="flex flex-col md:flex-row justify-between items-baseline mb-12">
-          <h2 className="text-2xl font-bold text-primary">Beyond the Code</h2>
+          <h2 className="text-2xl font-bold text-primary">{t.beyondTitle}</h2>
           <span className="uppercase tracking-widest text-secondary font-semibold text-sm">
-            Leadership &amp; Impact
+            {t.beyondSubtitle}
           </span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -130,25 +129,22 @@ export default function AboutPage() {
                   school
                 </span>
                 <span className="text-sm text-secondary font-bold">
-                  Mentoring
+                  {t.mentoringLabel}
                 </span>
               </div>
               <h3 className="text-2xl font-bold text-primary-container mb-4">
-                Cultivating Engineering Talent
+                {t.mentoringTitle}
               </h3>
               <p className="text-on-surface-variant text-base max-w-2xl leading-relaxed">
-                I&apos;ve spent the last 5 years mentoring junior and mid-level
-                developers, helping them navigate complex architectural shifts
-                and fostering a culture of continuous learning and peer-review
-                excellence.
+                {t.mentoringDesc}
               </p>
             </div>
             <div className="mt-8 flex gap-4">
               <span className="px-4 py-1.5 rounded-full bg-surface-container-low text-[0.7rem] uppercase tracking-wider font-bold text-primary">
-                Workshops
+                {t.workshops}
               </span>
               <span className="px-4 py-1.5 rounded-full bg-surface-container-low text-[0.7rem] uppercase tracking-wider font-bold text-primary">
-                1:1 Coaching
+                {t.coaching}
               </span>
             </div>
           </div>
@@ -161,19 +157,19 @@ export default function AboutPage() {
                   source
                 </span>
                 <span className="text-sm text-on-primary-container font-bold">
-                  Open Source
+                  {t.openSourceLabel}
                 </span>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Giving Back</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                {t.openSourceTitle}
+              </h3>
               <p className="text-on-primary-container text-base leading-relaxed">
-                Active contributor to various mobile-first libraries and
-                maintaining high-performance UI components for the React Native
-                ecosystem.
+                {t.openSourceDesc}
               </p>
             </div>
             <div className="mt-12 relative z-10">
               <span className="text-4xl font-black text-on-primary-container/20">
-                500+ Stars
+                {t.openSourceStars}
               </span>
             </div>
             <div className="absolute -bottom-8 -right-8 opacity-10 group-hover:scale-110 transition-transform duration-500">
@@ -188,25 +184,24 @@ export default function AboutPage() {
             <div className="bg-surface-container-low rounded-xl p-10 ghost-border flex items-center gap-8">
               <div className="w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-slate-200">
                 <img
-                  alt="Speaking at conference"
+                  alt={t.speakingAlt}
                   className="w-full h-full object-cover grayscale"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaL9el3EaNELuOaEJ5OoQpyJb7_J_G6Fn6r03gBay5DWLs86xHYRqGJmI9SfjM2llL99wgp7C9cq3HSYnyplHIzZ-kdsoIlTpWPjgb1dxdqRFGLhgt3qgjDs71_mtVs4p8-55xv6Ug6Twdet2k-YJXhatcoIawUDvpF3MiG-wka6GPKZXQrMf-M95eCM1nr8RYxx-3S7wTGL5VBXXQEnxRCTXEqDQf9uta8XZocDjmiuK-z88LZieRgQ9upn8OzqpBo6guMbxMKaBT"
                 />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-primary-container">
-                  Technical Speaking
+                  {t.speakingTitle}
                 </h3>
                 <p className="text-on-surface-variant mt-2">
-                  Regular guest at international tech summits, sharing insights
-                  on mobile-native performance and system scalability.
+                  {t.speakingDesc}
                 </p>
               </div>
             </div>
             <div className="bg-surface-container-lowest rounded-xl p-10 ghost-border flex flex-col justify-center">
               <div className="flex justify-between items-center mb-4">
                 <h4 className="font-bold text-primary uppercase text-xs tracking-[0.2em]">
-                  Latest Appearances
+                  {t.appearancesTitle}
                 </h4>
                 <span className="text-secondary text-xs font-mono">
                   2023-2024

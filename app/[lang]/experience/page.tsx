@@ -1,32 +1,46 @@
 /* eslint-disable @next/next/no-img-element */
-import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 
-export const metadata: Metadata = {
-  title: "Experience | Architectural Portfolio",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  if (!hasLocale(lang)) return {};
+  const dict = await getDictionary(lang);
+  return { title: dict.metadata.experienceTitle };
+}
 
-export default function ExperiencePage() {
+export default async function ExperiencePage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  if (!hasLocale(lang)) notFound();
+  const dict = await getDictionary(lang as Locale);
+  const t = dict.experience;
+
   return (
     <main className="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
       {/* Header Section */}
       <header className="mb-20 md:w-2/3">
         <span className="uppercase tracking-widest text-on-secondary-container mb-4 block text-sm">
-          Professional History
+          {t.subtitle}
         </span>
         <h1 className="text-[3.5rem] font-bold tracking-tighter text-primary leading-none mb-6">
-          Experience
+          {t.title}
         </h1>
         <p className="text-base text-on-surface-variant max-w-xl leading-relaxed">
-          A chronological architectural deep-dive into nearly a decade of
-          building high-performance mobile ecosystems and scalable fullstack
-          solutions.
+          {t.description}
         </p>
       </header>
 
       {/* Experience Timeline */}
       <div className="relative">
-        {/* Vertical Timeline Line */}
         <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant/30 transform md:-translate-x-1/2 hidden md:block"></div>
 
         {/* Role 1: CloudStream */}
@@ -35,43 +49,33 @@ export default function ExperiencePage() {
             <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
               <div className="flex items-center justify-between md:flex-row-reverse gap-4 mb-4">
                 <h3 className="text-xl font-semibold text-primary-container">
-                  CloudStream
+                  {t.company1}
                 </h3>
                 <span className="text-sm bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full">
-                  Current
+                  {t.current}
                 </span>
               </div>
               <h4 className="text-lg font-bold text-primary mb-2">
-                Senior Staff Engineer
+                {t.role1}
               </h4>
               <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     architecture
                   </span>
-                  <span>
-                    Spearheaded the migration of legacy monolith to a
-                    distributed micro-frontend architecture, improving deployment
-                    frequency by 40%.
-                  </span>
+                  <span>{t.role1Item1}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     speed
                   </span>
-                  <span>
-                    Optimized mobile application cold-start time by 60% through
-                    advanced caching strategies and lazy-loading modules.
-                  </span>
+                  <span>{t.role1Item2}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     groups
                   </span>
-                  <span>
-                    Mentored a team of 15+ engineers, implementing strict code
-                    review standards and design document protocols.
-                  </span>
+                  <span>{t.role1Item3}</span>
                 </li>
               </ul>
             </div>
@@ -79,7 +83,7 @@ export default function ExperiencePage() {
           <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary-container z-10 border-4 border-surface ring-4 ring-primary-container/10"></div>
           <div className="md:w-1/2 md:pl-16 order-1 md:order-2 mb-4 md:mb-0">
             <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
-              2021 — PRESENT
+              {t.period1}
             </span>
           </div>
         </div>
@@ -88,7 +92,7 @@ export default function ExperiencePage() {
         <div className="relative mb-24 flex flex-col md:flex-row items-start md:items-center">
           <div className="md:w-1/2 md:pr-16 mb-4 md:mb-0 text-left md:text-right">
             <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
-              2018 — 2021
+              {t.period2}
             </span>
           </div>
           <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
@@ -96,43 +100,33 @@ export default function ExperiencePage() {
             <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
               <div className="flex items-center justify-between gap-4 mb-4">
                 <h3 className="text-xl font-semibold text-primary-container">
-                  FinTech Collective
+                  {t.company2}
                 </h3>
                 <span className="text-sm bg-surface-container-low text-on-surface-variant px-3 py-1 rounded-full">
-                  3 Years
+                  {t.years3}
                 </span>
               </div>
               <h4 className="text-lg font-bold text-primary mb-2">
-                Lead Mobile Developer
+                {t.role2}
               </h4>
               <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     verified_user
                   </span>
-                  <span>
-                    Engineered a secure biometric authentication layer reducing
-                    user onboarding friction and decreasing setup time by 50%.
-                  </span>
+                  <span>{t.role2Item1}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     star
                   </span>
-                  <span>
-                    Maintained a consistent 4.8-star rating on both App Store and
-                    Play Store through proactive crash monitoring and UX
-                    refinements.
-                  </span>
+                  <span>{t.role2Item2}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     monitoring
                   </span>
-                  <span>
-                    Established automated CI/CD pipelines for mobile deployments,
-                    reducing manual release efforts by 80%.
-                  </span>
+                  <span>{t.role2Item3}</span>
                 </li>
               </ul>
             </div>
@@ -145,42 +139,33 @@ export default function ExperiencePage() {
             <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
               <div className="flex items-center justify-between md:flex-row-reverse gap-4 mb-4">
                 <h3 className="text-xl font-semibold text-primary-container">
-                  StartupFoundry
+                  {t.company3}
                 </h3>
                 <span className="text-sm bg-surface-container-low text-on-surface-variant px-3 py-1 rounded-full">
-                  2 Years
+                  {t.years2}
                 </span>
               </div>
               <h4 className="text-lg font-bold text-primary mb-2">
-                Fullstack Engineer
+                {t.role3}
               </h4>
               <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     rocket_launch
                   </span>
-                  <span>
-                    Bootstrapped 5+ MVP products for early-stage startups using
-                    React, Node.js, and PostgreSQL in rapid 6-week cycles.
-                  </span>
+                  <span>{t.role3Item1}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     database
                   </span>
-                  <span>
-                    Implemented real-time synchronization engines for
-                    collaborative tools using WebSockets and Redis.
-                  </span>
+                  <span>{t.role3Item2}</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     layers
                   </span>
-                  <span>
-                    Designed and documented RESTful APIs utilized by over 200,000
-                    monthly active users across the foundry portfolio.
-                  </span>
+                  <span>{t.role3Item3}</span>
                 </li>
               </ul>
             </div>
@@ -188,7 +173,7 @@ export default function ExperiencePage() {
           <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
           <div className="md:w-1/2 md:pl-16 order-1 md:order-2 mb-4 md:mb-0">
             <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
-              2016 — 2018
+              {t.period3}
             </span>
           </div>
         </div>
@@ -198,25 +183,21 @@ export default function ExperiencePage() {
       <section className="mt-32 p-12 rounded-xl bg-primary-container text-white flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden relative">
         <div className="relative z-10">
           <h2 className="text-3xl font-bold tracking-tight mb-2">
-            Ready to build something lasting?
+            {t.ctaTitle}
           </h2>
-          <p className="text-on-primary-container">
-            Currently open to senior architectural consulting and leadership
-            roles.
-          </p>
+          <p className="text-on-primary-container">{t.ctaDesc}</p>
         </div>
         <div className="relative z-10 flex gap-4">
           <Link
-            href="/contact"
+            href={`/${lang}/contact`}
             className="px-8 py-3 bg-white text-primary-container font-bold rounded-lg hover:opacity-90 transition-opacity"
           >
-            Get In Touch
+            {t.ctaButton}
           </Link>
           <button className="px-8 py-3 border border-white/20 text-white font-bold rounded-lg hover:bg-white/10 transition-colors">
-            Download CV
+            {t.ctaDownload}
           </button>
         </div>
-        {/* Decorative Texture */}
         <div
           className="absolute inset-0 opacity-10 pointer-events-none"
           style={{
