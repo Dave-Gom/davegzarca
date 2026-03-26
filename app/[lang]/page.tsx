@@ -189,7 +189,23 @@ export default async function Home({
                   </div>
                 </div>
               </div>
-              {/* Role 2 */}
+              {/* Role 5 — PadelSys (2024 — Present) */}
+              <div className="relative pl-8 md:pl-0">
+                <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-12">
+                  <span className="text-sm font-bold text-primary/40 uppercase tracking-widest md:w-32 pt-1">
+                    {t.role5Period}
+                  </span>
+                  <div className="space-y-4 flex-1">
+                    <h4 className="text-2xl font-bold text-primary">
+                      {t.role5Title}
+                    </h4>
+                    <p className="text-on-surface-variant leading-relaxed max-w-xl">
+                      {t.role5Desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Role 2 — Banco Continental (2022 — 2024) */}
               <div className="relative pl-8 md:pl-0">
                 <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-12">
                   <span className="text-sm font-bold text-primary/40 uppercase tracking-widest md:w-32 pt-1">
@@ -216,22 +232,6 @@ export default async function Home({
                         {t.role2Item2}
                       </li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-              {/* Role 5 — PadelSys */}
-              <div className="relative pl-8 md:pl-0">
-                <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-12">
-                  <span className="text-sm font-bold text-primary/40 uppercase tracking-widest md:w-32 pt-1">
-                    {t.role5Period}
-                  </span>
-                  <div className="space-y-4 flex-1">
-                    <h4 className="text-2xl font-bold text-primary">
-                      {t.role5Title}
-                    </h4>
-                    <p className="text-on-surface-variant leading-relaxed max-w-xl">
-                      {t.role5Desc}
-                    </p>
                   </div>
                 </div>
               </div>

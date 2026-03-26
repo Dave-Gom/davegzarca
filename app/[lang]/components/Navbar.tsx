@@ -9,9 +9,9 @@ interface NavbarProps {
   lang: Locale;
   labels: {
     brand: string;
+    home: string;
     about: string;
     experience: string;
-    projects: string;
     contact: string;
     resume: string;
   };
@@ -22,13 +22,13 @@ export default function Navbar({ lang, labels }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
+    { href: `/${lang}`, label: labels.home, match: null },
     { href: `/${lang}/about`, label: labels.about, match: "/about" },
     {
       href: `/${lang}/experience`,
       label: labels.experience,
       match: "/experience",
     },
-    { href: `/${lang}`, label: labels.projects, match: null },
     { href: `/${lang}/contact`, label: labels.contact, match: "/contact" },
   ];
 

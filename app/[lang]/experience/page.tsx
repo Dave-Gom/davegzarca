@@ -43,7 +43,7 @@ export default async function ExperiencePage({
       <div className="relative">
         <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant/30 transform md:-translate-x-1/2 hidden md:block"></div>
 
-        {/* Role 1: CloudStream */}
+        {/* Role 1: Billetera Mango (2024 — Present) */}
         <div className="relative mb-24 flex flex-col md:flex-row items-start md:items-center">
           <div className="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
             <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
@@ -88,17 +88,56 @@ export default async function ExperiencePage({
           </div>
         </div>
 
-        {/* Role 2: FinTech Collective */}
+        {/* Role 5: PadelSys (2024 — Present, Freelance) */}
         <div className="relative mb-24 flex flex-col md:flex-row items-start md:items-center">
           <div className="md:w-1/2 md:pr-16 mb-4 md:mb-0 text-left md:text-right">
             <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
-              {t.period2}
+              {t.period5}
             </span>
           </div>
           <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
           <div className="md:w-1/2 md:pl-16">
             <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
               <div className="flex items-center justify-between gap-4 mb-4">
+                <h3 className="text-xl font-semibold text-primary-container">
+                  {t.company5}
+                </h3>
+                <span className="text-sm bg-surface-container-low text-on-surface-variant px-3 py-1 rounded-full">
+                  {t.years5}
+                </span>
+              </div>
+              <h4 className="text-lg font-bold text-primary mb-2">
+                {t.role5}
+              </h4>
+              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
+                    sports_tennis
+                  </span>
+                  <span>{t.role5Item1}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
+                    leaderboard
+                  </span>
+                  <span>{t.role5Item2}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
+                    layers
+                  </span>
+                  <span>{t.role5Item3}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Role 2: Banco Continental (2022 — 2024) */}
+        <div className="relative mb-24 flex flex-col md:flex-row items-start md:items-center">
+          <div className="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
+            <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
+              <div className="flex items-center justify-between md:flex-row-reverse gap-4 mb-4">
                 <h3 className="text-xl font-semibold text-primary-container">
                   {t.company2}
                 </h3>
@@ -109,7 +148,7 @@ export default async function ExperiencePage({
               <h4 className="text-lg font-bold text-primary mb-2">
                 {t.role2}
               </h4>
-              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
+              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     verified_user
@@ -131,13 +170,25 @@ export default async function ExperiencePage({
               </ul>
             </div>
           </div>
+          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
+          <div className="md:w-1/2 md:pl-16 order-1 md:order-2 mb-4 md:mb-0">
+            <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
+              {t.period2}
+            </span>
+          </div>
         </div>
 
-        {/* Role 3: StartupFoundry */}
-        <div className="relative mb-12 flex flex-col md:flex-row items-start md:items-center">
-          <div className="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
+        {/* Role 3: Arco SA (2022) */}
+        <div className="relative mb-24 flex flex-col md:flex-row items-start md:items-center">
+          <div className="md:w-1/2 md:pr-16 mb-4 md:mb-0 text-left md:text-right">
+            <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
+              {t.period3}
+            </span>
+          </div>
+          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
+          <div className="md:w-1/2 md:pl-16">
             <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
-              <div className="flex items-center justify-between md:flex-row-reverse gap-4 mb-4">
+              <div className="flex items-center justify-between gap-4 mb-4">
                 <h3 className="text-xl font-semibold text-primary-container">
                   {t.company3}
                 </h3>
@@ -148,7 +199,7 @@ export default async function ExperiencePage({
               <h4 className="text-lg font-bold text-primary mb-2">
                 {t.role3}
               </h4>
-              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
+              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     rocket_launch
@@ -170,29 +221,13 @@ export default async function ExperiencePage({
               </ul>
             </div>
           </div>
-          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
-          <div className="md:w-1/2 md:pl-16 order-1 md:order-2 mb-4 md:mb-0">
-            <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
-              {t.period3}
-            </span>
-          </div>
         </div>
 
-        {/* Role 4: Sercicronos */}
+        {/* Role 4: Sercicronos (2019 — 2021) */}
         <div className="relative mb-12 flex flex-col md:flex-row items-start md:items-center">
           <div className="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
-          </div>
-          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
-          <div className="md:w-1/2 md:pl-16 order-1 md:order-2 mb-4 md:mb-0">
-            <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
-              {t.period4}
-            </span>
-          </div>
-        </div>
-        <div className="relative mb-12 flex flex-col md:flex-row items-start md:items-center">
-          <div className="md:w-1/2 md:pr-16 mb-8 md:mb-0 order-1 md:order-2">
             <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
-              <div className="flex items-center justify-between gap-4 mb-4">
+              <div className="flex items-center justify-between md:flex-row-reverse gap-4 mb-4">
                 <h3 className="text-xl font-semibold text-primary-container">
                   {t.company4}
                 </h3>
@@ -203,7 +238,7 @@ export default async function ExperiencePage({
               <h4 className="text-lg font-bold text-primary mb-2">
                 {t.role4}
               </h4>
-              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
+              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
                     directions_run
@@ -226,50 +261,9 @@ export default async function ExperiencePage({
             </div>
           </div>
           <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
-          <div className="md:w-1/2 md:pr-16 order-2 md:order-1"></div>
-        </div>
-
-        {/* Role 5: PadelSys */}
-        <div className="relative mb-12 flex flex-col md:flex-row items-start md:items-center">
-          <div className="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
-            <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
-              <div className="flex items-center justify-between md:flex-row-reverse gap-4 mb-4">
-                <h3 className="text-xl font-semibold text-primary-container">
-                  {t.company5}
-                </h3>
-                <span className="text-sm bg-surface-container-low text-on-surface-variant px-3 py-1 rounded-full">
-                  {t.years5}
-                </span>
-              </div>
-              <h4 className="text-lg font-bold text-primary mb-2">
-                {t.role5}
-              </h4>
-              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
-                <li className="flex items-start gap-3">
-                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
-                    sports_tennis
-                  </span>
-                  <span>{t.role5Item1}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
-                    leaderboard
-                  </span>
-                  <span>{t.role5Item2}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
-                    layers
-                  </span>
-                  <span>{t.role5Item3}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
           <div className="md:w-1/2 md:pl-16 order-1 md:order-2 mb-4 md:mb-0">
             <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
-              {t.period5}
+              {t.period4}
             </span>
           </div>
         </div>

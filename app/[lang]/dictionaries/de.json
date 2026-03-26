@@ -10,7 +10,7 @@
     "brand": "David Gómez",
     "about": "Über mich",
     "experience": "Erfahrung",
-    "projects": "Projekte",
+    "home": "Startseite",
     "contact": "Kontakt",
     "resume": "Lebenslauf"
   },
@@ -160,7 +160,7 @@
     "role5Item1": "Entwicklung einer Padel-Turniermanagement-Plattform, die in ganz Paraguay genutzt wird.",
     "role5Item2": "Turniererstellung, Spielerregistrierung, Bracket-Generierung und Analytik-Funktionen.",
     "role5Item3": "Tech Stack: PHP, JavaScript, jQuery, Bootstrap, Chart.js, MySQL.",
-    "ctaTitle": "Bereit, etwas Bedeutendes zu bauen?",
+    "ctaTitle": "Bereit, etwas Spannendes zu bauen?",
     "ctaDesc": "Offen für Senior Mobile Development Rollen und Freelance-Beratungsmöglichkeiten.",
     "ctaButton": "Kontakt aufnehmen",
     "ctaDownload": "Lebenslauf herunterladen"
