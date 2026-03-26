@@ -14,6 +14,7 @@ interface NavbarProps {
     experience: string;
     contact: string;
     resume: string;
+    resumeFile: string;
   };
 }
 
@@ -85,9 +86,13 @@ export default function Navbar({ lang, labels }: NavbarProps) {
               </span>
             ))}
           </div>
-          <button className="hidden md:block bg-primary-container text-on-primary px-5 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+          <a
+            href={labels.resumeFile}
+            download
+            className="hidden md:block bg-primary-container text-on-primary px-5 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+          >
             {labels.resume}
-          </button>
+          </a>
           <button
             className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -120,9 +125,13 @@ export default function Navbar({ lang, labels }: NavbarProps) {
               </Link>
             ))}
             <div className="mt-2 pt-3 border-t border-slate-200/30">
-              <button className="w-full bg-primary-container text-on-primary px-5 py-3 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+              <a
+                href={labels.resumeFile}
+                download
+                className="w-full bg-primary-container text-on-primary px-5 py-3 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity block text-center"
+              >
                 {labels.resume}
-              </button>
+              </a>
             </div>
           </div>
         </div>

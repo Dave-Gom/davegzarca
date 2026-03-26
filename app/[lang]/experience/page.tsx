@@ -23,6 +23,7 @@ export default async function ExperiencePage({
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
   const t = dict.experience;
+  const resumeFile = dict.navbar.resumeFile;
 
   return (
     <main className="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
@@ -284,9 +285,13 @@ export default async function ExperiencePage({
           >
             {t.ctaButton}
           </Link>
-          <button className="px-8 py-3 border border-white/20 text-white font-bold rounded-lg hover:bg-white/10 transition-colors">
+          <a
+            href={resumeFile}
+            download
+            className="px-8 py-3 border border-white/20 text-white font-bold rounded-lg hover:bg-white/10 transition-colors"
+          >
             {t.ctaDownload}
-          </button>
+          </a>
         </div>
         <div
           className="absolute inset-0 opacity-10 pointer-events-none"

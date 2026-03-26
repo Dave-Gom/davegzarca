@@ -12,7 +12,8 @@
     "experience": "Erfahrung",
     "home": "Startseite",
     "contact": "Kontakt",
-    "resume": "Lebenslauf"
+    "resume": "Lebenslauf",
+    "resumeFile": "/assets/docs/resume/cv-de.pdf"
   },
   "footer": {
     "copyright": "© 2025 David Gómez. Mit Leidenschaft für Mobile- und Webentwicklung gebaut.",
