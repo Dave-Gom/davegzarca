@@ -7,7 +7,7 @@ interface FooterProps {
   };
 }
 
-export default function Footer({ labels }: FooterProps) {
+export const Footer = ({ labels }: FooterProps) => {
   return (
     <footer className="w-full border-t border-slate-200 bg-slate-50">
       <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 py-12 gap-6">
@@ -43,4 +43,4 @@ export default function Footer({ labels }: FooterProps) {
       </div>
     </footer>
   );
-}
+};

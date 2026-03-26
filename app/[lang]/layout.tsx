@@ -1,4 +1,4 @@
-import Footer from "@/lib/components/Footer";
+import { Footer } from "@/lib/components/Footer";
 import Navbar from "@/lib/components/Navbar";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";

@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { Locale } from "@/infrastructure/translations/dictionaries";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { Locale } from "../dictionaries";
+import { useState } from "react";
 
 interface NavbarProps {
   lang: Locale;

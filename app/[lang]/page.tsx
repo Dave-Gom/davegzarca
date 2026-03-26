@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import ProjectCard from "@/lib/components/ProjectCard";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -6,7 +7,6 @@ import {
   hasLocale,
   type Locale,
 } from "../../infrastructure/translations/dictionaries";
-import ProjectCard from "./components/ProjectCard";
 
 export default async function Home({
   params,
