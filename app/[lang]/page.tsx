@@ -120,7 +120,14 @@ export default async function Home({
           </div>
           <div className="space-y-32">
             <ProjectCard
-              imageSrc="https://play-lh.googleusercontent.com/cyH-T2AxlTGav2KuRyz2e5-wRjUbbBvtWVqWFPi8mJCuO4uBzLXCEhMInMmmmZSdQKlHLiHv9yQt3FnImDwo1w=w5120-h2880-rw"
+              images={[
+                "assets/images/projects/mango/image.png",
+                "assets/images/projects/mango/image2.png",
+                "assets/images/projects/mango/image3.png",
+                "assets/images/projects/mango/image4.png",
+                "assets/images/projects/mango/image5.png",
+                "assets/images/projects/mango/image6.png",
+              ]}
               imageAlt={t.project1Alt}
               tags={["React Native", "UIKit", "Kotlin"]}
               title={t.project1Title}
@@ -131,7 +138,15 @@ export default async function Home({
               role={t.project1Role}
             />
             <ProjectCard
-              imageSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuD-CmxdgQYe5ciIRC0_uHQHJawgn9ykSpxl0Rvg4hJtR8NzetLW0IDM_nzBhEY9O5rEsjsgoJ4q86V5sVqXw-RZvsMXdPFZfWyL7ooSyZpS7jWofoFC_61wdf0Ya7GuC2XErtt5aeY5dQ4P8vpv2RyJUdHDJmQwJXGQ_jqpPv9Q7pU29TmtwOPaGvRpk6bQOabBuk8puvDMW2_skOtkwDPbDQQeimGr8vPdXE80akancpPUSOOUH5pfh_8bwVMEsoWq9YwYuAVus-QJ"
+              images={[
+                "assets/images/projects/contimovil/image.png",
+                "assets/images/projects/contimovil/image2.png",
+                "assets/images/projects/contimovil/image3.png",
+                "assets/images/projects/contimovil/image4.png",
+                "assets/images/projects/contimovil/image5.png",
+                "assets/images/projects/contimovil/image6.png",
+                "assets/images/projects/contimovil/image7.png",
+              ]}
               imageAlt={t.project2Alt}
               tags={["Swift UI", "PostgreSQL", "AWS Lambda"]}
               title={t.project2Title}

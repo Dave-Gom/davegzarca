@@ -1,5 +1,9 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
 interface ProjectCardProps {
-  imageSrc: string;
+  images: string[];
   imageAlt: string;
   tags: string[];
   title: string;
@@ -12,7 +16,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({
-  imageSrc,
+  images,
   imageAlt,
   tags,
   title,
@@ -23,16 +27,80 @@ export default function ProjectCard({
   role,
   imagePosition = "left",
 }: ProjectCardProps) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  function updateScrollState() {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 2);
+    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 2);
+  }
+
+  useEffect(() => {
+    updateScrollState();
+  }, []);
+
+  function scroll(direction: "left" | "right") {
+    const el = scrollRef.current;
+    if (!el) return;
+    const scrollAmount = el.clientWidth * 0.7;
+    el.scrollBy({
+      left: direction === "left" ? -scrollAmount : scrollAmount,
+      behavior: "smooth",
+    });
+  }
+
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <div
-        className={`${imagePosition === "right" ? "lg:order-last " : ""}rounded-xl overflow-hidden bg-surface-container-low shadow-sm`}
+        className={`${imagePosition === "right" ? "lg:order-last " : ""}relative group`}
       >
-        <img
-          alt={imageAlt}
-          className="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-700"
-          src={imageSrc}
-        />
+        <div
+          ref={scrollRef}
+          onScroll={updateScrollState}
+          className="flex gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
+          {images.map((src, i) => (
+            <div
+              key={i}
+              className="snap-start shrink-0 rounded-xl overflow-hidden bg-surface-container-low shadow-sm"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                alt={`${imageAlt} ${i + 1}`}
+                className="h-[400px] w-auto object-cover hover:scale-105 transition-transform duration-700 "
+                src={src}
+              />
+            </div>
+          ))}
+        </div>
+
+        {canScrollLeft && (
+          <button
+            onClick={() => scroll("left")}
+            className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-lg flex items-center justify-center text-primary hover:bg-white transition-colors opacity-0 group-hover:opacity-100 z-10"
+            aria-label="Scroll left"
+          >
+            <span className="material-symbols-outlined text-xl">
+              chevron_left
+            </span>
+          </button>
+        )}
+
+        {canScrollRight && (
+          <button
+            onClick={() => scroll("right")}
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 shadow-lg flex items-center justify-center text-primary hover:bg-white transition-colors opacity-0 group-hover:opacity-100 z-10"
+            aria-label="Scroll right"
+          >
+            <span className="material-symbols-outlined text-xl">
+              chevron_right
+            </span>
+          </button>
+        )}
       </div>
       <div className="space-y-6">
         <div className="flex gap-3 flex-wrap">

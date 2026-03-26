@@ -85,6 +85,11 @@
     "opsz" 24;
 }
 
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Glass Navigation */
 .glass-nav {
   background: rgba(255, 255, 255, 0.8);
