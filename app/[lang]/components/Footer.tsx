@@ -3,7 +3,7 @@ interface FooterProps {
     copyright: string;
     linkedin: string;
     github: string;
-    twitter: string;
+    instagram: string;
   };
 }
 
@@ -17,21 +17,27 @@ export default function Footer({ labels }: FooterProps) {
         <div className="flex gap-8">
           <a
             className="font-sans text-xs uppercase tracking-widest font-semibold text-slate-400 hover:text-slate-900 transition-colors"
-            href="#"
+            href="https://www.linkedin.com/in/davegzarca/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {labels.linkedin}
           </a>
           <a
             className="font-sans text-xs uppercase tracking-widest font-semibold text-slate-400 hover:text-slate-900 transition-colors"
-            href="#"
+            href="https://github.com/Dave-Gom"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {labels.github}
           </a>
           <a
             className="font-sans text-xs uppercase tracking-widest font-semibold text-slate-400 hover:text-slate-900 transition-colors"
-            href="#"
+            href="https://www.instagram.com/davegzarca/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            {labels.twitter}
+            {labels.instagram}
           </a>
         </div>
       </div>

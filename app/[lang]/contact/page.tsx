@@ -110,21 +110,27 @@ export default async function ContactPage({
                 <div className="flex flex-wrap gap-4">
                   <a
                     className="px-4 py-2 bg-surface-container-low rounded-full text-sm font-medium text-primary hover:bg-secondary-container transition-colors"
-                    href="#"
+                    href="https://www.linkedin.com/in/davegzarca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     LinkedIn
                   </a>
                   <a
                     className="px-4 py-2 bg-surface-container-low rounded-full text-sm font-medium text-primary hover:bg-secondary-container transition-colors"
-                    href="#"
+                    href="https://github.com/Dave-Gom"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     GitHub
                   </a>
                   <a
                     className="px-4 py-2 bg-surface-container-low rounded-full text-sm font-medium text-primary hover:bg-secondary-container transition-colors"
-                    href="#"
+                    href="https://www.instagram.com/davegzarca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Twitter
+                    Instagram
                   </a>
                 </div>
               </div>

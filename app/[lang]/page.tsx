@@ -383,7 +383,9 @@ export default async function Home({
             </a>
             <a
               className="group border border-white/20 px-10 py-5 rounded-lg font-bold text-lg flex items-center justify-center gap-3 hover:bg-white/10 transition-all"
-              href="#"
+              href="https://www.linkedin.com/in/davegzarca/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="material-symbols-outlined">link</span>
               {t.ctaLinkedIn}
