@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Locale } from "../dictionaries";
@@ -18,6 +19,7 @@ interface NavbarProps {
 
 export default function Navbar({ lang, labels }: NavbarProps) {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
     { href: `/${lang}/about`, label: labels.about, match: "/about" },
@@ -83,12 +85,48 @@ export default function Navbar({ lang, labels }: NavbarProps) {
               </span>
             ))}
           </div>
-          <button className="bg-primary-container text-on-primary px-5 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+          <button className="hidden md:block bg-primary-container text-on-primary px-5 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
             {labels.resume}
+          </button>
+          <button
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className="material-symbols-outlined text-2xl">
+              {menuOpen ? "close" : "menu"}
+            </span>
           </button>
         </div>
       </div>
       <div className="bg-slate-200/20 h-px w-full absolute bottom-0"></div>
+
+      {/* Mobile menu */}
+      {menuOpen && (
+        <div className="md:hidden glass-nav border-t border-slate-200/30">
+          <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className={
+                  isActive(link)
+                    ? "text-slate-900 font-semibold py-3 px-4 rounded-lg bg-slate-100/50 text-sm tracking-tight"
+                    : "text-slate-500 hover:text-slate-900 hover:bg-slate-50 py-3 px-4 rounded-lg transition-colors text-sm tracking-tight font-medium"
+                }
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="mt-2 pt-3 border-t border-slate-200/30">
+              <button className="w-full bg-primary-container text-on-primary px-5 py-3 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+                {labels.resume}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

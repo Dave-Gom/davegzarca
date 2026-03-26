@@ -85,7 +85,7 @@ export default async function Home({
             </p>
             <div className="grid grid-cols-2 gap-8 pt-8">
               <div>
-                <p className="text-4xl font-extrabold text-primary">
+                <p className="text-3xl md:text-4xl font-extrabold text-primary">
                   {t.yearsCount}
                 </p>
                 <p className="text-sm font-medium text-secondary tracking-wide uppercase mt-2">
@@ -93,7 +93,7 @@ export default async function Home({
                 </p>
               </div>
               <div>
-                <p className="text-4xl font-extrabold text-primary">
+                <p className="text-3xl md:text-4xl font-extrabold text-primary">
                   {t.appsCount}
                 </p>
                 <p className="text-sm font-medium text-secondary tracking-wide uppercase mt-2">
@@ -113,7 +113,7 @@ export default async function Home({
               <h2 className="text-xs font-bold uppercase tracking-widest text-primary/40 mb-4">
                 {t.worksLabel}
               </h2>
-              <h3 className="text-4xl font-extrabold text-primary tracking-tighter">
+              <h3 className="text-2xl md:text-4xl font-extrabold text-primary tracking-tighter">
                 {t.worksTitle}
               </h3>
             </div>
@@ -154,7 +154,7 @@ export default async function Home({
               <h2 className="text-xs font-bold uppercase tracking-widest text-primary/40 mb-4">
                 {t.historyLabel}
               </h2>
-              <h3 className="text-4xl font-extrabold text-primary tracking-tighter">
+              <h3 className="text-2xl md:text-4xl font-extrabold text-primary tracking-tighter">
                 {t.historyTitle}
               </h3>
             </div>

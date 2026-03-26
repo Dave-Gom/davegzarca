@@ -31,7 +31,7 @@ export default async function AboutPage({
           <span className="uppercase tracking-widest text-secondary font-semibold mb-4 block text-sm">
             {t.subtitle}
           </span>
-          <h1 className="text-[3.5rem] font-extrabold tracking-tighter leading-none mb-8 text-primary">
+          <h1 className="text-3xl md:text-[3.5rem] font-extrabold tracking-tighter leading-none mb-8 text-primary">
             {t.title}
           </h1>
           <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed">
