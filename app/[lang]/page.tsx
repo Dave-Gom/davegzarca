@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ProjectCard from "./components/ProjectCard";
 import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 
 export default async function Home({
@@ -53,7 +54,7 @@ export default async function Home({
               <img
                 alt={t.portraitAlt}
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWRn39l-xmGHUB-TXZUYiuzwrh1-yKAnfNqf-AjdCZNplPfoUeqAAlHvq1hRgdmITdTRl_VOlSZ93axbCMS9NOnx7qIiTJXQKxKYGJFbcLtvGnhEUdJ66D84DAOL1R0aFAh6D0xk0rkUm2Swc4SCZtxOex57KwTBc9R_gFAphCFY8tJsk19TeZDVz717aPOl1NpAZEw7MylUjE_c4Xs2d5uxwC61aFVBfy8Vik-Hu0cvtFfx_H9hX4TRIRodLAe_x_VGpakZGxBWi5"
+                src="/assets/images/me/david_principal.jpeg"
               />
             </div>
           </div>
@@ -118,91 +119,29 @@ export default async function Home({
             </div>
           </div>
           <div className="space-y-32">
-            {/* Project 1 */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div className="rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
-                <img
-                  alt={t.project1Alt}
-                  className="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-700"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGgrSwLQvRfQ3PpkRlNKXqBI3-KyLAtPnSlPNlmNBzGzfFVB73IHkzbG4HPmernA--LR3vQbe7bqWQqpx8gy5QgHQKg26fTI6jRAi9ZAU5xIwhQKnnL_x4xS5Og12XB-TBjDXMyNmUHc9jxJjnbXKW0WTv9oRD46ChjHc-g335Qnr8ByHXgNjUJzo_gBfU-okn6FMV_WGIOVtLbt7OV39a10c-7N5jIn95WHfiyGrEAUgBkpFb8KET2V8koDxapFXvG3s7ugADPKzJ"
-                />
-              </div>
-              <div className="space-y-6">
-                <div className="flex gap-3 flex-wrap">
-                  <span className="ghost-border px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-secondary">
-                    React Native
-                  </span>
-                  <span className="ghost-border px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-secondary">
-                    GraphQL
-                  </span>
-                  <span className="ghost-border px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-secondary">
-                    Node.js
-                  </span>
-                </div>
-                <h4 className="text-3xl font-bold text-primary tracking-tight">
-                  {t.project1Title}
-                </h4>
-                <p className="text-on-surface-variant text-lg leading-relaxed">
-                  {t.project1Desc}
-                </p>
-                <div className="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary">
-                  <p className="text-primary font-bold text-xl">
-                    {t.project1Impact}
-                  </p>
-                  <p className="text-secondary text-sm font-medium uppercase mt-1">
-                    {t.project1ImpactLabel}
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 text-primary font-semibold">
-                  <span className="material-symbols-outlined">verified</span>
-                  <span>{t.project1Role}</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 2 */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div className="lg:order-last rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
-                <img
-                  alt={t.project2Alt}
-                  className="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-700"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-CmxdgQYe5ciIRC0_uHQHJawgn9ykSpxl0Rvg4hJtR8NzetLW0IDM_nzBhEY9O5rEsjsgoJ4q86V5sVqXw-RZvsMXdPFZfWyL7ooSyZpS7jWofoFC_61wdf0Ya7GuC2XErtt5aeY5dQ4P8vpv2RyJUdHDJmQwJXGQ_jqpPv9Q7pU29TmtwOPaGvRpk6bQOabBuk8puvDMW2_skOtkwDPbDQQeimGr8vPdXE80akancpPUSOOUH5pfh_8bwVMEsoWq9YwYuAVus-QJ"
-                />
-              </div>
-              <div className="space-y-6">
-                <div className="flex gap-3 flex-wrap">
-                  <span className="ghost-border px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-secondary">
-                    Swift UI
-                  </span>
-                  <span className="ghost-border px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-secondary">
-                    PostgreSQL
-                  </span>
-                  <span className="ghost-border px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-secondary">
-                    AWS Lambda
-                  </span>
-                </div>
-                <h4 className="text-3xl font-bold text-primary tracking-tight">
-                  {t.project2Title}
-                </h4>
-                <p className="text-on-surface-variant text-lg leading-relaxed">
-                  {t.project2Desc}
-                </p>
-                <div className="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary">
-                  <p className="text-primary font-bold text-xl">
-                    {t.project2Impact}
-                  </p>
-                  <p className="text-secondary text-sm font-medium uppercase mt-1">
-                    {t.project2ImpactLabel}
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 text-primary font-semibold">
-                  <span className="material-symbols-outlined">
-                    architecture
-                  </span>
-                  <span>{t.project2Role}</span>
-                </div>
-              </div>
-            </div>
+            <ProjectCard
+              imageSrc="https://play-lh.googleusercontent.com/cyH-T2AxlTGav2KuRyz2e5-wRjUbbBvtWVqWFPi8mJCuO4uBzLXCEhMInMmmmZSdQKlHLiHv9yQt3FnImDwo1w=w5120-h2880-rw"
+              imageAlt={t.project1Alt}
+              tags={["React Native", "UIKit", "Kotlin"]}
+              title={t.project1Title}
+              description={t.project1Desc}
+              impact={t.project1Impact}
+              impactLabel={t.project1ImpactLabel}
+              icon="verified"
+              role={t.project1Role}
+            />
+            <ProjectCard
+              imageSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuD-CmxdgQYe5ciIRC0_uHQHJawgn9ykSpxl0Rvg4hJtR8NzetLW0IDM_nzBhEY9O5rEsjsgoJ4q86V5sVqXw-RZvsMXdPFZfWyL7ooSyZpS7jWofoFC_61wdf0Ya7GuC2XErtt5aeY5dQ4P8vpv2RyJUdHDJmQwJXGQ_jqpPv9Q7pU29TmtwOPaGvRpk6bQOabBuk8puvDMW2_skOtkwDPbDQQeimGr8vPdXE80akancpPUSOOUH5pfh_8bwVMEsoWq9YwYuAVus-QJ"
+              imageAlt={t.project2Alt}
+              tags={["Swift UI", "PostgreSQL", "AWS Lambda"]}
+              title={t.project2Title}
+              description={t.project2Desc}
+              impact={t.project2Impact}
+              impactLabel={t.project2ImpactLabel}
+              icon="architecture"
+              role={t.project2Role}
+              imagePosition="right"
+            />
           </div>
         </div>
       </section>
@@ -280,7 +219,23 @@ export default async function Home({
                   </div>
                 </div>
               </div>
-              {/* Role 3 */}
+              {/* Role 5 — PadelSys */}
+              <div className="relative pl-8 md:pl-0">
+                <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-12">
+                  <span className="text-sm font-bold text-primary/40 uppercase tracking-widest md:w-32 pt-1">
+                    {t.role5Period}
+                  </span>
+                  <div className="space-y-4 flex-1">
+                    <h4 className="text-2xl font-bold text-primary">
+                      {t.role5Title}
+                    </h4>
+                    <p className="text-on-surface-variant leading-relaxed max-w-xl">
+                      {t.role5Desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Role 3 — Arco SA */}
               <div className="relative pl-8 md:pl-0">
                 <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-12">
                   <span className="text-sm font-bold text-primary/40 uppercase tracking-widest md:w-32 pt-1">
@@ -292,6 +247,22 @@ export default async function Home({
                     </h4>
                     <p className="text-on-surface-variant leading-relaxed max-w-xl">
                       {t.role3Desc}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Role 4 — Sercicronos */}
+              <div className="relative pl-8 md:pl-0">
+                <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-12">
+                  <span className="text-sm font-bold text-primary/40 uppercase tracking-widest md:w-32 pt-1">
+                    {t.role4Period}
+                  </span>
+                  <div className="space-y-4 flex-1">
+                    <h4 className="text-2xl font-bold text-primary">
+                      {t.role4Title}
+                    </h4>
+                    <p className="text-on-surface-variant leading-relaxed max-w-xl">
+                      {t.role4Desc}
                     </p>
                   </div>
                 </div>
@@ -382,7 +353,7 @@ export default async function Home({
                     >
                       {skill}
                     </span>
-                  )
+                  ),
                 )}
               </div>
             </div>
@@ -405,10 +376,10 @@ export default async function Home({
           <div className="flex flex-col md:flex-row justify-center gap-6">
             <a
               className="group bg-white text-primary px-10 py-5 rounded-lg font-bold text-lg flex items-center justify-center gap-3 hover:bg-slate-100 transition-all"
-              href="mailto:hello@alexchen.dev"
+              href="mailto:davegomez426@gmail.com"
             >
               <span className="material-symbols-outlined">mail</span>
-              hello@alexchen.dev
+              davegomez426@gmail.com
             </a>
             <a
               className="group border border-white/20 px-10 py-5 rounded-lg font-bold text-lg flex items-center justify-center gap-3 hover:bg-white/10 transition-all"

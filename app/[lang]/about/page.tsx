@@ -43,7 +43,7 @@ export default async function AboutPage({
           <img
             alt={t.portraitAlt}
             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4eMlGdhOuT0Cp-1hC43xXT7UHuqs3LbU5B7Py93JzeRJig7P8njtISuhueFD0vljLYCU84px2u8ZwFF99oudzal1taf4pSltXpmDr131PUuD1u-JSWRUdTcFuK1vQJ3RAwRW1B1JlWpO45wr8r-Qq8mpLsQ5rFIyK5g-2325QYP7zQEeUULh8o2G4dTNOx3vN2oKtkpA_NyrlArWZMvICIP7NW737KH0W-OGwRyIqKorAtYobesEE-X9vPOvK33DUwAZiSa1GMskg"
+            src="/assets/images/me/david_about.jpeg"
           />
           <div className="absolute inset-0 border-[24px] border-surface/10 pointer-events-none"></div>
         </div>
@@ -160,9 +160,7 @@ export default async function AboutPage({
                   {t.openSourceLabel}
                 </span>
               </div>
-              <h3 className="text-2xl font-bold mb-4">
-                {t.openSourceTitle}
-              </h3>
+              <h3 className="text-2xl font-bold mb-4">{t.openSourceTitle}</h3>
               <p className="text-on-primary-container text-base leading-relaxed">
                 {t.openSourceDesc}
               </p>
@@ -186,16 +184,14 @@ export default async function AboutPage({
                 <img
                   alt={t.speakingAlt}
                   className="w-full h-full object-cover grayscale"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaL9el3EaNELuOaEJ5OoQpyJb7_J_G6Fn6r03gBay5DWLs86xHYRqGJmI9SfjM2llL99wgp7C9cq3HSYnyplHIzZ-kdsoIlTpWPjgb1dxdqRFGLhgt3qgjDs71_mtVs4p8-55xv6Ug6Twdet2k-YJXhatcoIawUDvpF3MiG-wka6GPKZXQrMf-M95eCM1nr8RYxx-3S7wTGL5VBXXQEnxRCTXEqDQf9uta8XZocDjmiuK-z88LZieRgQ9upn8OzqpBo6guMbxMKaBT"
+                  src="/assets/images/me/productOwnerShip.jpg"
                 />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-primary-container">
                   {t.speakingTitle}
                 </h3>
-                <p className="text-on-surface-variant mt-2">
-                  {t.speakingDesc}
-                </p>
+                <p className="text-on-surface-variant mt-2">{t.speakingDesc}</p>
               </div>
             </div>
             <div className="bg-surface-container-lowest rounded-xl p-10 ghost-border flex flex-col justify-center">
@@ -204,30 +200,32 @@ export default async function AboutPage({
                   {t.appearancesTitle}
                 </h4>
                 <span className="text-secondary text-xs font-mono">
-                  2023-2024
+                  2022-2025
                 </span>
               </div>
               <ul className="space-y-3">
                 <li className="flex justify-between border-b border-outline-variant/10 pb-2">
                   <span className="text-on-surface-variant text-sm">
-                    MobileConf Global
+                    {t.appearance1}
                   </span>
                   <span className="text-primary font-bold text-sm">
-                    Helsinki
+                    {t.appearance1Detail}
                   </span>
                 </li>
                 <li className="flex justify-between border-b border-outline-variant/10 pb-2">
                   <span className="text-on-surface-variant text-sm">
-                    Fullstack Summit
+                    {t.appearance2}
                   </span>
-                  <span className="text-primary font-bold text-sm">London</span>
+                  <span className="text-primary font-bold text-sm">
+                    {t.appearance2Detail}
+                  </span>
                 </li>
                 <li className="flex justify-between border-b border-outline-variant/10 pb-2">
                   <span className="text-on-surface-variant text-sm">
-                    React Native EU
+                    {t.appearance3}
                   </span>
                   <span className="text-primary font-bold text-sm">
-                    Wrocław
+                    {t.appearance3Detail}
                   </span>
                 </li>
               </ul>

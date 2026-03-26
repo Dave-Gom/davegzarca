@@ -29,9 +29,6 @@ export default async function ContactPage({
         {/* Left Column */}
         <div className="lg:col-span-7 space-y-12">
           <header className="space-y-4">
-            <span className="uppercase tracking-[0.2em] text-secondary font-semibold text-xs">
-              {t.availability}
-            </span>
             <h1 className="text-[3.5rem] leading-none font-bold tracking-tight text-primary-container">
               {t.title} <br />
               {t.titleLine2}
@@ -63,9 +60,9 @@ export default async function ContactPage({
                 </p>
                 <a
                   className="text-2xl font-medium text-primary hover:text-primary-container transition-colors flex items-center gap-3"
-                  href="mailto:hello@alexchen.dev"
+                  href="mailto:davegomez426@gmail.com"
                 >
-                  hello@alexchen.dev
+                  davegomez426@gmail.com
                   <span className="material-symbols-outlined text-primary/30 group-hover:translate-x-1 transition-transform">
                     arrow_forward
                   </span>

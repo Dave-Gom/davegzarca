@@ -36,8 +36,8 @@ export default function Navbar({ lang, labels }: NavbarProps) {
     return pathWithoutLang.startsWith(link.match);
   }
 
-  const otherLang = lang === "en" ? "es" : "en";
-  const switchPath = pathname.replace(`/${lang}`, `/${otherLang}`);
+  const allLocales: Locale[] = ["en", "es", "de"];
+  const otherLocales = allLocales.filter((l) => l !== lang);
 
   return (
     <nav className="fixed top-0 w-full z-50 glass-nav shadow-sm">
@@ -63,13 +63,26 @@ export default function Navbar({ lang, labels }: NavbarProps) {
             </Link>
           ))}
         </div>
-        <div className="flex items-center gap-4">
-          <Link
-            href={switchPath}
-            className="text-xs font-bold uppercase tracking-wider text-slate-500 hover:text-slate-900 transition-colors"
-          >
-            {otherLang.toUpperCase()}
-          </Link>
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1">
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
+              {lang.toUpperCase()}
+            </span>
+            <span className="text-slate-300 text-xs">/</span>
+            {otherLocales.map((l, i) => (
+              <span key={l} className="flex items-center">
+                <Link
+                  href={pathname.replace(`/${lang}`, `/${l}`)}
+                  className="text-xs font-bold uppercase tracking-wider text-slate-400 hover:text-slate-900 transition-colors"
+                >
+                  {l.toUpperCase()}
+                </Link>
+                {i < otherLocales.length - 1 && (
+                  <span className="text-slate-300 text-xs mx-1">/</span>
+                )}
+              </span>
+            ))}
+          </div>
           <button className="bg-primary-container text-on-primary px-5 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
             {labels.resume}
           </button>

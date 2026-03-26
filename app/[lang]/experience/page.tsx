@@ -177,6 +177,102 @@ export default async function ExperiencePage({
             </span>
           </div>
         </div>
+
+        {/* Role 4: Sercicronos */}
+        <div className="relative mb-12 flex flex-col md:flex-row items-start md:items-center">
+          <div className="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
+          </div>
+          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
+          <div className="md:w-1/2 md:pl-16 order-1 md:order-2 mb-4 md:mb-0">
+            <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
+              {t.period4}
+            </span>
+          </div>
+        </div>
+        <div className="relative mb-12 flex flex-col md:flex-row items-start md:items-center">
+          <div className="md:w-1/2 md:pr-16 mb-8 md:mb-0 order-1 md:order-2">
+            <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
+              <div className="flex items-center justify-between gap-4 mb-4">
+                <h3 className="text-xl font-semibold text-primary-container">
+                  {t.company4}
+                </h3>
+                <span className="text-sm bg-surface-container-low text-on-surface-variant px-3 py-1 rounded-full">
+                  {t.years4}
+                </span>
+              </div>
+              <h4 className="text-lg font-bold text-primary mb-2">
+                {t.role4}
+              </h4>
+              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
+                    directions_run
+                  </span>
+                  <span>{t.role4Item1}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
+                    timer
+                  </span>
+                  <span>{t.role4Item2}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
+                    layers
+                  </span>
+                  <span>{t.role4Item3}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
+          <div className="md:w-1/2 md:pr-16 order-2 md:order-1"></div>
+        </div>
+
+        {/* Role 5: PadelSys */}
+        <div className="relative mb-12 flex flex-col md:flex-row items-start md:items-center">
+          <div className="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
+            <div className="bg-surface-container-lowest p-8 rounded-xl ghost-border shadow-sm">
+              <div className="flex items-center justify-between md:flex-row-reverse gap-4 mb-4">
+                <h3 className="text-xl font-semibold text-primary-container">
+                  {t.company5}
+                </h3>
+                <span className="text-sm bg-surface-container-low text-on-surface-variant px-3 py-1 rounded-full">
+                  {t.years5}
+                </span>
+              </div>
+              <h4 className="text-lg font-bold text-primary mb-2">
+                {t.role5}
+              </h4>
+              <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
+                    sports_tennis
+                  </span>
+                  <span>{t.role5Item1}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
+                    leaderboard
+                  </span>
+                  <span>{t.role5Item2}</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-primary text-lg mt-0.5">
+                    layers
+                  </span>
+                  <span>{t.role5Item3}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-outline-variant z-10 border-4 border-surface ring-4 ring-outline-variant/10"></div>
+          <div className="md:w-1/2 md:pl-16 order-1 md:order-2 mb-4 md:mb-0">
+            <span className="text-2xl font-bold text-primary opacity-30 tracking-tighter">
+              {t.period5}
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* Call to Action */}
