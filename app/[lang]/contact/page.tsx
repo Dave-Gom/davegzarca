@@ -69,38 +69,18 @@ export default async function ContactPage({
                 </a>
               </div>
 
-              {/* Form */}
-              <form className="space-y-6 pt-4">
-                <div className="space-y-2">
-                  <label className="uppercase tracking-widest text-secondary text-sm">
-                    {t.nameLabel}
-                  </label>
-                  <input
-                    className="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary-container focus:bg-surface-container-lowest transition-all"
-                    placeholder={t.namePlaceholder}
-                    type="text"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="uppercase tracking-widest text-secondary text-sm">
-                    {t.visionLabel}
-                  </label>
-                  <textarea
-                    className="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-1 focus:ring-primary-container focus:bg-surface-container-lowest transition-all"
-                    placeholder={t.visionPlaceholder}
-                    rows={4}
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
+              {/* Send Message */}
+              <div className="pt-4">
+                <a
+                  href="mailto:davegomez426@gmail.com"
                   className="w-full bg-primary-container text-on-primary py-4 rounded-lg font-bold tracking-wide hover:bg-primary transition-colors flex justify-center items-center gap-2"
                 >
                   {t.sendButton}
                   <span className="material-symbols-outlined text-[1.2rem]">
-                    send
+                    mail
                   </span>
-                </button>
-              </form>
+                </a>
+              </div>
 
               {/* Social Links */}
               <div className="pt-8 border-t border-outline-variant/20">
