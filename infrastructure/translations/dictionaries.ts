@@ -1,6 +1,6 @@
 import "server-only";
 
-export type Locale = "en" | "es" | "de";
+import type { Locale } from "../types/locale";
 
 export const locales: Locale[] = ["en", "es", "de"];
 export const defaultLocale: Locale = "en";
@@ -12,8 +12,6 @@ const dictionaries = {
 };
 
 export const getDictionary = async (locale: Locale) => dictionaries[locale]();
-
-export type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
 
 export const hasLocale = (locale: string): locale is Locale =>
   locales.includes(locale as Locale);

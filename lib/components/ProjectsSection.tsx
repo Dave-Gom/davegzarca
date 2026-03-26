@@ -1,4 +1,4 @@
-import type { Dictionary } from "@/infrastructure/translations/dictionaries";
+import type { Dictionary } from "@/infrastructure/types";
 import ProjectCard from "./ProjectCard";
 import SectionHeader from "./SectionHeader";
 

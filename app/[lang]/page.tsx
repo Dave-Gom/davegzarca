@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
+import type { Locale } from "@/infrastructure/types";
 import {
   getDictionary,
   hasLocale,
-  type Locale,
 } from "../../infrastructure/translations/dictionaries";
 import HeroSection from "@/lib/components/HeroSection";
 import AboutSection from "@/lib/components/AboutSection";

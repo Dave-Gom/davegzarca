@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Locale } from "@/infrastructure/types";
 import {
   getDictionary,
   hasLocale,
-  type Locale,
 } from "../../../infrastructure/translations/dictionaries";
 
 export const generateMetadata = async ({

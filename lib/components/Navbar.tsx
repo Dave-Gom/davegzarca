@@ -1,6 +1,6 @@
 "use client";
 
-import { Locale } from "@/infrastructure/translations/dictionaries";
+import type { Locale } from "@/infrastructure/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";

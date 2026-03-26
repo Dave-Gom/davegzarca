@@ -1,4 +1,4 @@
-import type { Dictionary } from "@/infrastructure/translations/dictionaries";
+import type { Dictionary } from "@/infrastructure/types";
 import SectionHeader from "./SectionHeader";
 
 interface AboutSectionProps {

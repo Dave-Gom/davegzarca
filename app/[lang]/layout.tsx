@@ -2,11 +2,11 @@ import { Footer } from "@/lib/components/Footer";
 import Navbar from "@/lib/components/Navbar";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
+import type { Locale } from "@/infrastructure/types";
 import {
   getDictionary,
   hasLocale,
   locales,
-  type Locale,
 } from "../../infrastructure/translations/dictionaries";
 import "../globals.css";
 
