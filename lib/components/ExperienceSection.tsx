@@ -6,7 +6,7 @@ interface ExperienceSectionProps {
   t: Dictionary["home"];
 }
 
-export default function ExperienceSection({ t }: ExperienceSectionProps) {
+const ExperienceSection = ({ t }: ExperienceSectionProps) => {
   return (
     <section className="py-32 bg-surface-container-low" id="experience">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -47,4 +47,6 @@ export default function ExperienceSection({ t }: ExperienceSectionProps) {
       </div>
     </section>
   );
-}
+};
+
+export default ExperienceSection;

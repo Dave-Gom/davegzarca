@@ -5,16 +5,16 @@ import { match } from "@formatjs/intl-localematcher";
 const locales = ["en", "es", "de"];
 const defaultLocale = "en";
 
-function getLocale(request: NextRequest): string {
+const getLocale = (request: NextRequest): string => {
   const headers: Record<string, string> = {};
   request.headers.forEach((value, key) => {
     headers[key] = value;
   });
   const languages = new Negotiator({ headers }).languages();
   return match(languages, locales, defaultLocale);
-}
+};
 
-export function proxy(request: NextRequest) {
+export const proxy = (request: NextRequest) => {
   const { pathname } = request.nextUrl;
 
   const pathnameHasLocale = locales.some(
@@ -26,7 +26,7 @@ export function proxy(request: NextRequest) {
   const locale = getLocale(request);
   request.nextUrl.pathname = `/${locale}${pathname}`;
   return NextResponse.redirect(request.nextUrl);
-}
+};
 
 export const config = {
   matcher: ["/((?!_next|api|favicon.ico|.*\\..*).*)"],

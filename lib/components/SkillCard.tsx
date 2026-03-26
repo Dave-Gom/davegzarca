@@ -4,7 +4,7 @@ interface SkillCardProps {
   skills: string[];
 }
 
-export default function SkillCard({ icon, title, skills }: SkillCardProps) {
+const SkillCard = ({ icon, title, skills }: SkillCardProps) => {
   return (
     <div className="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow">
       <div className="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-8">
@@ -23,4 +23,6 @@ export default function SkillCard({ icon, title, skills }: SkillCardProps) {
       </div>
     </div>
   );
-}
+};
+
+export default SkillCard;

@@ -16,15 +16,14 @@ const inter = Inter({
   display: "swap",
 });
 
-export async function generateStaticParams() {
-  return locales.map((lang) => ({ lang }));
-}
+export const generateStaticParams = async () =>
+  locales.map((lang) => ({ lang }));
 
-export async function generateMetadata({
+export const generateMetadata = async ({
   params,
 }: {
   params: Promise<{ lang: string }>;
-}) {
+}) => {
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
@@ -32,15 +31,15 @@ export async function generateMetadata({
     title: dict.metadata.homeTitle,
     description: dict.metadata.homeDescription,
   };
-}
+};
 
-export default async function RootLayout({
+const RootLayout = async ({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
   params: Promise<{ lang: string }>;
-}>) {
+}>) => {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
 
@@ -61,4 +60,6 @@ export default async function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

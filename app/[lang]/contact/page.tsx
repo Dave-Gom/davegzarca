@@ -6,22 +6,22 @@ import {
   type Locale,
 } from "../../../infrastructure/translations/dictionaries";
 
-export async function generateMetadata({
+export const generateMetadata = async ({
   params,
 }: {
   params: Promise<{ lang: string }>;
-}) {
+}) => {
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang);
   return { title: dict.metadata.contactTitle };
-}
+};
 
-export default async function ContactPage({
+const ContactPage = async ({
   params,
 }: {
   params: Promise<{ lang: string }>;
-}) {
+}) => {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
@@ -141,4 +141,6 @@ export default async function ContactPage({
       </div>
     </main>
   );
-}
+};
+
+export default ContactPage;

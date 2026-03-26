@@ -5,12 +5,12 @@ interface SectionHeaderProps {
   titleSize?: "md" | "lg";
 }
 
-export default function SectionHeader({
+const SectionHeader = ({
   label,
   title,
   centered = false,
   titleSize = "md",
-}: SectionHeaderProps) {
+}: SectionHeaderProps) => {
   return (
     <div className={centered ? "text-center" : ""}>
       <h2 className="text-xs font-bold uppercase tracking-widest text-primary/40 mb-4">
@@ -27,4 +27,6 @@ export default function SectionHeader({
       </h3>
     </div>
   );
-}
+};
+
+export default SectionHeader;

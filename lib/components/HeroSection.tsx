@@ -7,7 +7,7 @@ interface HeroSectionProps {
   lang: string;
 }
 
-export default function HeroSection({ t, lang }: HeroSectionProps) {
+const HeroSection = ({ t, lang }: HeroSectionProps) => {
   return (
     <section className="min-h-[870px] flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
@@ -53,4 +53,6 @@ export default function HeroSection({ t, lang }: HeroSectionProps) {
       </div>
     </section>
   );
-}
+};
+
+export default HeroSection;

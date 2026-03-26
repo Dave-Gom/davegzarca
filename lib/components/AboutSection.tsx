@@ -5,7 +5,7 @@ interface AboutSectionProps {
   t: Dictionary["home"];
 }
 
-export default function AboutSection({ t }: AboutSectionProps) {
+const AboutSection = ({ t }: AboutSectionProps) => {
   return (
     <section className="py-32 bg-surface-container-low" id="about">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12">
@@ -31,9 +31,11 @@ export default function AboutSection({ t }: AboutSectionProps) {
       </div>
     </section>
   );
-}
+};
 
-function StatItem({ value, label }: { value: string; label: string }) {
+export default AboutSection;
+
+const StatItem = ({ value, label }: { value: string; label: string }) => {
   return (
     <div>
       <p className="text-3xl md:text-4xl font-extrabold text-primary">
@@ -44,4 +46,4 @@ function StatItem({ value, label }: { value: string; label: string }) {
       </p>
     </div>
   );
-}
+};

@@ -11,11 +11,11 @@ import ExperienceSection from "@/lib/components/ExperienceSection";
 import SkillsSection from "@/lib/components/SkillsSection";
 import ContactSection from "@/lib/components/ContactSection";
 
-export default async function Home({
+const Home = async ({
   params,
 }: {
   params: Promise<{ lang: string }>;
-}) {
+}) => {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
@@ -31,4 +31,6 @@ export default async function Home({
       <ContactSection t={t} />
     </main>
   );
-}
+};
+
+export default Home;

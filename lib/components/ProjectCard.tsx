@@ -15,7 +15,7 @@ interface ProjectCardProps {
   imagePosition?: "left" | "right";
 }
 
-export default function ProjectCard({
+const ProjectCard = ({
   images,
   imageAlt,
   tags,
@@ -26,23 +26,23 @@ export default function ProjectCard({
   icon,
   role,
   imagePosition = "left",
-}: ProjectCardProps) {
+}: ProjectCardProps) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
 
-  function updateScrollState() {
+  const updateScrollState = () => {
     const el = scrollRef.current;
     if (!el) return;
     setCanScrollLeft(el.scrollLeft > 2);
     setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 2);
-  }
+  };
 
   useEffect(() => {
     updateScrollState();
   }, []);
 
-  function scroll(direction: "left" | "right") {
+  const scroll = (direction: "left" | "right") => {
     const el = scrollRef.current;
     if (!el) return;
     const scrollAmount = el.clientWidth * 0.7;
@@ -50,7 +50,7 @@ export default function ProjectCard({
       left: direction === "left" ? -scrollAmount : scrollAmount,
       behavior: "smooth",
     });
-  }
+  };
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -132,4 +132,6 @@ export default function ProjectCard({
       </div>
     </div>
   );
-}
+};
+
+export default ProjectCard;

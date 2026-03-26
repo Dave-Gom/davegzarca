@@ -6,7 +6,7 @@ interface SkillsSectionProps {
   t: Dictionary["home"];
 }
 
-export default function SkillsSection({ t }: SkillsSectionProps) {
+const SkillsSection = ({ t }: SkillsSectionProps) => {
   return (
     <section className="py-32 bg-surface">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -33,4 +33,6 @@ export default function SkillsSection({ t }: SkillsSectionProps) {
       </div>
     </section>
   );
-}
+};
+
+export default SkillsSection;

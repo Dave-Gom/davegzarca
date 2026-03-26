@@ -15,6 +15,5 @@ export const getDictionary = async (locale: Locale) => dictionaries[locale]();
 
 export type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
 
-export function hasLocale(locale: string): locale is Locale {
-  return locales.includes(locale as Locale);
-}
+export const hasLocale = (locale: string): locale is Locale =>
+  locales.includes(locale as Locale);

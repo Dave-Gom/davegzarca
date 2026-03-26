@@ -5,12 +5,12 @@ interface ExperienceRoleProps {
   items?: string[];
 }
 
-export default function ExperienceRole({
+const ExperienceRole = ({
   period,
   title,
   description,
   items,
-}: ExperienceRoleProps) {
+}: ExperienceRoleProps) => {
   return (
     <div className="relative pl-8 md:pl-0">
       <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-12">
@@ -38,4 +38,6 @@ export default function ExperienceRole({
       </div>
     </div>
   );
-}
+};
+
+export default ExperienceRole;

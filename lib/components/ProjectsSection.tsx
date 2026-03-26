@@ -6,7 +6,7 @@ interface ProjectsSectionProps {
   t: Dictionary["home"];
 }
 
-export default function ProjectsSection({ t }: ProjectsSectionProps) {
+const ProjectsSection = ({ t }: ProjectsSectionProps) => {
   return (
     <section className="py-32 bg-surface" id="projects">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -56,4 +56,6 @@ export default function ProjectsSection({ t }: ProjectsSectionProps) {
       </div>
     </section>
   );
-}
+};
+
+export default ProjectsSection;

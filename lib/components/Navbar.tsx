@@ -18,7 +18,7 @@ interface NavbarProps {
   };
 }
 
-export default function Navbar({ lang, labels }: NavbarProps) {
+const Navbar = ({ lang, labels }: NavbarProps) => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -33,11 +33,11 @@ export default function Navbar({ lang, labels }: NavbarProps) {
     { href: `/${lang}/contact`, label: labels.contact, match: "/contact" },
   ];
 
-  function isActive(link: (typeof navLinks)[number]) {
+  const isActive = (link: (typeof navLinks)[number]) => {
     const pathWithoutLang = pathname.replace(`/${lang}`, "") || "/";
     if (link.match === null) return pathWithoutLang === "/";
     return pathWithoutLang.startsWith(link.match);
-  }
+  };
 
   const allLocales: Locale[] = ["en", "es", "de"];
   const otherLocales = allLocales.filter((l) => l !== lang);
@@ -138,4 +138,6 @@ export default function Navbar({ lang, labels }: NavbarProps) {
       )}
     </nav>
   );
-}
+};
+
+export default Navbar;

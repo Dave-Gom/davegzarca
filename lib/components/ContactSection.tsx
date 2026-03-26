@@ -4,7 +4,7 @@ interface ContactSectionProps {
   t: Dictionary["home"];
 }
 
-export default function ContactSection({ t }: ContactSectionProps) {
+const ContactSection = ({ t }: ContactSectionProps) => {
   return (
     <section
       className="py-32 bg-primary-container text-white overflow-hidden relative"
@@ -39,4 +39,6 @@ export default function ContactSection({ t }: ContactSectionProps) {
       <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-primary rounded-full blur-[120px] opacity-50"></div>
     </section>
   );
-}
+};
+
+export default ContactSection;
