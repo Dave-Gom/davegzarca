@@ -1,8 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import {
+  getDictionary,
+  hasLocale,
+  type Locale,
+} from "../../infrastructure/translations/dictionaries";
 import ProjectCard from "./components/ProjectCard";
-import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 
 export default async function Home({
   params,

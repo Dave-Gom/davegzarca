@@ -1,6 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { notFound } from "next/navigation";
-import { getDictionary, hasLocale, type Locale } from "../dictionaries";
+import {
+  getDictionary,
+  hasLocale,
+  type Locale,
+} from "../../../infrastructure/translations/dictionaries";
 
 export async function generateMetadata({
   params,

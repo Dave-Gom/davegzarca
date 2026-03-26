@@ -1,7 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getDictionary, hasLocale, type Locale } from "../dictionaries";
+import {
+  getDictionary,
+  hasLocale,
+  type Locale,
+} from "../../../infrastructure/translations/dictionaries";
 
 export async function generateMetadata({
   params,
@@ -56,9 +60,7 @@ export default async function ExperiencePage({
                   {t.current}
                 </span>
               </div>
-              <h4 className="text-lg font-bold text-primary mb-2">
-                {t.role1}
-              </h4>
+              <h4 className="text-lg font-bold text-primary mb-2">{t.role1}</h4>
               <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
@@ -107,9 +109,7 @@ export default async function ExperiencePage({
                   {t.years5}
                 </span>
               </div>
-              <h4 className="text-lg font-bold text-primary mb-2">
-                {t.role5}
-              </h4>
+              <h4 className="text-lg font-bold text-primary mb-2">{t.role5}</h4>
               <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
@@ -146,9 +146,7 @@ export default async function ExperiencePage({
                   {t.years3}
                 </span>
               </div>
-              <h4 className="text-lg font-bold text-primary mb-2">
-                {t.role2}
-              </h4>
+              <h4 className="text-lg font-bold text-primary mb-2">{t.role2}</h4>
               <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
@@ -197,9 +195,7 @@ export default async function ExperiencePage({
                   {t.years2}
                 </span>
               </div>
-              <h4 className="text-lg font-bold text-primary mb-2">
-                {t.role3}
-              </h4>
+              <h4 className="text-lg font-bold text-primary mb-2">{t.role3}</h4>
               <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">
@@ -236,9 +232,7 @@ export default async function ExperiencePage({
                   {t.years4}
                 </span>
               </div>
-              <h4 className="text-lg font-bold text-primary mb-2">
-                {t.role4}
-              </h4>
+              <h4 className="text-lg font-bold text-primary mb-2">{t.role4}</h4>
               <ul className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed text-left">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary text-lg mt-0.5">

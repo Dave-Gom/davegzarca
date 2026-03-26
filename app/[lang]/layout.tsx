@@ -1,14 +1,14 @@
+import Footer from "@/lib/components/Footer";
+import Navbar from "@/lib/components/Navbar";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
-import "../globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import {
   getDictionary,
   hasLocale,
   locales,
   type Locale,
-} from "./dictionaries";
+} from "../../infrastructure/translations/dictionaries";
+import "../globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,7 +27,7 @@ export async function generateMetadata({
 }) {
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
   return {
     title: dict.metadata.homeTitle,
     description: dict.metadata.homeDescription,
