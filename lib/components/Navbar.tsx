@@ -43,7 +43,7 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
   const otherLocales = allLocales.filter((l) => l !== lang);
 
   return (
-    <nav className="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <nav className="fixed top-0 w-full z-50 shadow-sm bg-white">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-6 md:px-8 h-16">
         <Link
           href={`/${lang}`}

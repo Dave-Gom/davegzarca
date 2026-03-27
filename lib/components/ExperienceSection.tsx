@@ -1,6 +1,6 @@
 import type { Dictionary } from "@/infrastructure/types";
-import SectionHeader from "./SectionHeader";
 import ExperienceRole from "./ExperienceRole";
+import SectionHeader from "./SectionHeader";
 
 interface ExperienceSectionProps {
   t: Dictionary["home"];
@@ -31,16 +31,6 @@ const ExperienceSection = ({ t }: ExperienceSectionProps) => {
               title={t.role2Title}
               description={t.role2Desc}
               items={[t.role2Item1, t.role2Item2]}
-            />
-            <ExperienceRole
-              period={t.role3Period}
-              title={t.role3Title}
-              description={t.role3Desc}
-            />
-            <ExperienceRole
-              period={t.role4Period}
-              title={t.role4Title}
-              description={t.role4Desc}
             />
           </div>
         </div>
