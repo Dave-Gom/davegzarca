@@ -5,7 +5,7 @@ const screens: ScreensTranslations = {
     heroSection: {
       basedIn: "Ubicado en Areguá, Paraguay",
       heroName: "David Gómez.",
-      heroTagline: "Construyendo Apps Móviles Usadas por Millones.",
+      heroTagline: "Construyendo Apps Usadas por Millones.",
       heroDescription:
         "Desarrollador Senior Fullstack Mobile & Web especializado en arquitecturas React Native e iOS Nativo y backends Node.js para los sectores financiero y de salud.",
       viewWork: "Ver mi trabajo",
