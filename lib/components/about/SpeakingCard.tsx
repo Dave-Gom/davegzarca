@@ -7,19 +7,19 @@ interface SpeakingCardProps {
 
 const SpeakingCard = ({ t }: SpeakingCardProps) => {
   return (
-    <div className="bg-surface-container-low rounded-xl p-10 ghost-border flex items-center gap-8">
-      <div className="w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-slate-200">
-        <img
-          alt={t.imageAlt}
-          className="w-full h-full object-cover grayscale"
-          src="/assets/images/me/productOwnerShip.jpg"
-        />
-      </div>
+    <div className="bg-surface-container-low rounded-xl p-10 ghost-border flex flex-col md:flex-row md:items-center gap-6 md:gap-8">
       <div>
         <h3 className="text-xl font-bold text-primary-container">
           {t.title}
         </h3>
         <p className="text-on-surface-variant mt-2">{t.description}</p>
+      </div>
+      <div className="w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-slate-200 self-center md:self-auto">
+        <img
+          alt={t.imageAlt}
+          className="w-full h-full object-cover grayscale"
+          src="/assets/images/me/productOwnerShip.jpg"
+        />
       </div>
     </div>
   );
