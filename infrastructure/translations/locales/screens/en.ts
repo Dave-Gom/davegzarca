@@ -128,16 +128,16 @@ const screens: ScreensTranslations = {
       },
       openSourceCard: {
         label: "Freelance",
-        title: "Full-Cycle Ownership",
+        title: "End-to-End Solo Projects",
         description:
-          "As the sole developer of PadelSys and the Realtec landing page, I managed projects end-to-end: from architecture and stakeholder meetings to deployment and ongoing maintenance.",
+          "I develop and maintain PadelSys, a padel tournament platform used across Paraguay, handling architecture, database, frontend, and deployment. I also built the Realtec landing page as an independent project, negotiating scope directly with the client.",
         stars: "1K+ Users Served",
       },
       speakingCard: {
         imageAlt: "David Gómez working on code",
-        title: "Product Ownership",
+        title: "Technical Leadership",
         description:
-          "As the sole developer of PadelSys, I manage the full product lifecycle from architecture and stakeholder meetings to deployment and maintenance. Complete technical and product ownership of a platform used by padel players across Paraguay.",
+          "At Farmacia Canaria I led the project's technical decision-making: defined the backend architecture, established coding standards, and guided the team through complex integration challenges with existing healthcare systems.",
       },
       appearancesCard: {
         title: "Recent Projects",

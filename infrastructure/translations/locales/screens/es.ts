@@ -130,14 +130,14 @@ const screens: ScreensTranslations = {
         label: "Freelance",
         title: "Ownership de Ciclo Completo",
         description:
-          "Como único desarrollador de PadelSys y la landing page de Realtec, gestioné proyectos de principio a fin: desde la arquitectura y reuniones con stakeholders hasta el despliegue y el mantenimiento.",
+          "Desarrollo y mantengo PadelSys, una plataforma de torneos de pádel utilizada en todo Paraguay, manejando arquitectura, base de datos, frontend y despliegue. También construí la landing page de Realtec como proyecto independiente, negociando alcances directamente con el cliente.",
         stars: "+1K Usuarios servidos",
       },
       speakingCard: {
         imageAlt: "David Gómez trabajando en código",
-        title: "Product Ownership",
+        title: "Liderazgo Técnico",
         description:
-          "Como único desarrollador de PadelSys, gestiono el ciclo de vida completo del producto desde la arquitectura y reuniones con stakeholders hasta el despliegue y mantenimiento. Ownership técnico y de producto completo de una plataforma utilizada por jugadores de pádel en Paraguay.",
+          "En Farmacia Canaria lideré la toma de decisiones técnicas del proyecto: definí la arquitectura del backend, establecí estándares de código y guié al equipo en la resolución de problemas complejos de integración con sistemas de salud existentes.",
       },
       appearancesCard: {
         title: "Proyectos recientes",
