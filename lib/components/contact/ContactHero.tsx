@@ -17,11 +17,11 @@ const ContactHero = ({ t }: ContactHeroProps) => {
           {t.description}
         </p>
       </header>
-      <div className="aspect-[16/9] w-full rounded-xl overflow-hidden bg-surface-container-low grayscale hover:grayscale-0 transition-all duration-700">
+      <div className="aspect-[14/9] w-full rounded-xl overflow-hidden bg-surface-container-low grayscale hover:grayscale-0 transition-all duration-700">
         <img
           className="w-full h-full object-cover"
           alt={t.imageAlt}
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZMAHPoQ8SALYNIRHz-mE3Idt-_PTNgqJIi6jjhF1kN2SHaGu71qMHxQXgxRush_Ir--kitAezlI5gFwFQWKvzcgCGAZA6cVkLs06aocCCZOuFCb1bt3rZEBJ5YGsqdvnKR962ksV5SBHwF62bynMlLyQAhgMxRFvZO7EeOwfGr4sBGbQ_m0USXxN9supi0WbEwjgMD2LePzWXqcFuIvX01JEGCZRI4uydXdAIC99B_Faw9u9Im4Wx0YzYAbpi65l-AcSBrt0THLsY"
+          src="/assets/images/contacts/ASUCorp.jpeg"
         />
       </div>
     </div>
