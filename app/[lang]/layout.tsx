@@ -1,8 +1,8 @@
+import type { Locale } from "@/infrastructure/types";
 import { Footer } from "@/lib/components/Footer";
 import Navbar from "@/lib/components/Navbar";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
-import type { Locale } from "@/infrastructure/types";
 import {
   getDictionary,
   hasLocale,
@@ -53,7 +53,10 @@ const RootLayout = async ({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-white font-body">
+      <body
+        className="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-white font-body"
+        cz-shortcut-listen="true"
+      >
         <Navbar lang={lang as Locale} labels={dict.navbar} />
         {children}
         <Footer labels={dict.footer} />
