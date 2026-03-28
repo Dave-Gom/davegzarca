@@ -7,7 +7,7 @@ interface ContactHeroProps {
 
 const ContactHero = ({ t }: ContactHeroProps) => {
   return (
-    <div className="lg:col-span-7 space-y-12">
+    <div className="lg:col-span-7 space-y-4">
       <header className="space-y-4">
         <h1 className="text-3xl md:text-[3.5rem] leading-none font-bold tracking-tight text-primary-container">
           {t.title} <br />
@@ -17,7 +17,7 @@ const ContactHero = ({ t }: ContactHeroProps) => {
           {t.description}
         </p>
       </header>
-      <div className="aspect-[14/9] w-full rounded-xl overflow-hidden bg-surface-container-low grayscale hover:grayscale-0 transition-all duration-700">
+      <div className="aspect-[14/9] w-full rounded-xl overflow-hidden bg-surface-container-low transition-all duration-700">
         <img
           className="w-full h-full object-cover"
           alt={t.imageAlt}
