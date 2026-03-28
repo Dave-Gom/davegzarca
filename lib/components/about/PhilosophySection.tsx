@@ -1,8 +1,8 @@
-import type { AboutDictionary } from "@/infrastructure/types";
+import type { PhilosophySectionTranslations } from "@/infrastructure/types/translations/screens";
 import PhilosophyCard from "./PhilosophyCard";
 
 interface PhilosophySectionProps {
-  t: AboutDictionary;
+  t: PhilosophySectionTranslations;
 }
 
 const PhilosophySection = ({ t }: PhilosophySectionProps) => {

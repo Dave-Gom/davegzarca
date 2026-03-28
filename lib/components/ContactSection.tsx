@@ -1,7 +1,7 @@
-import type { Dictionary } from "@/infrastructure/types";
+import type { HomeContactSectionTranslations } from "@/infrastructure/types/translations/screens";
 
 interface ContactSectionProps {
-  t: Dictionary["home"];
+  t: HomeContactSectionTranslations;
 }
 
 const ContactSection = ({ t }: ContactSectionProps) => {

@@ -23,12 +23,12 @@ const Home = async ({
 
   return (
     <main className="pt-16">
-      <HeroSection t={t} lang={lang} />
-      <AboutSection t={t} />
-      <ProjectsSection t={t} />
-      <ExperienceSection t={t} />
-      <SkillsSection t={t} />
-      <ContactSection t={t} />
+      <HeroSection t={t.heroSection} lang={lang} />
+      <AboutSection t={t.aboutSection} />
+      <ProjectsSection t={t.projectsSection} />
+      <ExperienceSection t={t.experienceSection} />
+      <SkillsSection t={t.skillsSection} />
+      <ContactSection t={t.contactSection} />
     </main>
   );
 };

@@ -1,9 +1,9 @@
-import type { Dictionary } from "@/infrastructure/types";
+import type { HomExperienceSectionTranslations } from "@/infrastructure/types/translations/screens";
 import ExperienceRole from "./ExperienceRole";
 import SectionHeader from "./SectionHeader";
 
 interface ExperienceSectionProps {
-  t: Dictionary["home"];
+  t: HomExperienceSectionTranslations;
 }
 
 const ExperienceSection = ({ t }: ExperienceSectionProps) => {

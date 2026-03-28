@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import type { AboutDictionary } from "@/infrastructure/types";
+import type { AboutHeroSectionTranslations } from "@/infrastructure/types/translations/screens";
 
 interface AboutHeroSectionProps {
-  t: AboutDictionary;
+  t: AboutHeroSectionTranslations;
 }
 
 const AboutHeroSection = ({ t }: AboutHeroSectionProps) => {

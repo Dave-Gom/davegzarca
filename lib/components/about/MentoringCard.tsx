@@ -1,7 +1,7 @@
-import type { AboutDictionary } from "@/infrastructure/types";
+import type { MentoringCardTranslations } from "@/infrastructure/types/translations/screens";
 
 interface MentoringCardProps {
-  t: AboutDictionary;
+  t: MentoringCardTranslations;
 }
 
 const MentoringCard = ({ t }: MentoringCardProps) => {
@@ -11,14 +11,14 @@ const MentoringCard = ({ t }: MentoringCardProps) => {
         <div className="flex items-center gap-3 mb-6">
           <span className="material-symbols-outlined text-primary">school</span>
           <span className="text-sm text-secondary font-bold">
-            {t.mentoringLabel}
+            {t.label}
           </span>
         </div>
         <h3 className="text-2xl font-bold text-primary-container mb-4">
-          {t.mentoringTitle}
+          {t.title}
         </h3>
         <p className="text-on-surface-variant text-base max-w-2xl leading-relaxed">
-          {t.mentoringDesc}
+          {t.description}
         </p>
       </div>
       <div className="mt-8 flex gap-4">

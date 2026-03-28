@@ -1,8 +1,8 @@
-import type { Dictionary } from "@/infrastructure/types";
+import type { AboutSectionTranslations } from "@/infrastructure/types/translations/screens";
 import SectionHeader from "./SectionHeader";
 
 interface AboutSectionProps {
-  t: Dictionary["home"];
+  t: AboutSectionTranslations;
 }
 
 const AboutSection = ({ t }: AboutSectionProps) => {

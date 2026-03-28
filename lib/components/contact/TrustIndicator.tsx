@@ -1,7 +1,7 @@
-import type { ContactDictionary } from "@/infrastructure/types";
+import type { TrustIndicatorTranslations } from "@/infrastructure/types/translations/screens";
 
 interface TrustIndicatorProps {
-  t: ContactDictionary;
+  t: TrustIndicatorTranslations;
 }
 
 const TrustIndicator = ({ t }: TrustIndicatorProps) => {

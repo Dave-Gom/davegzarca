@@ -31,9 +31,9 @@ const ExperiencePage = async ({
 
   return (
     <main className="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
-      <ExperienceHeader t={t} />
-      <ExperienceTimeline t={t} />
-      <ExperienceCta t={t} lang={lang} resumeFile={dict.navbar.resumeFile} />
+      <ExperienceHeader t={t.header} />
+      <ExperienceTimeline t={t.timeline} />
+      <ExperienceCta t={t.cta} lang={lang} resumeFile={dict.navbar.resumeFile} />
     </main>
   );
 };

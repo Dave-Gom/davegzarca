@@ -1,9 +1,9 @@
-import type { Dictionary } from "@/infrastructure/types";
+import type { SkillsSectionTranslations } from "@/infrastructure/types/translations/screens";
 import SectionHeader from "./SectionHeader";
 import SkillCard from "./SkillCard";
 
 interface SkillsSectionProps {
-  t: Dictionary["home"];
+  t: SkillsSectionTranslations;
 }
 
 const SkillsSection = ({ t }: SkillsSectionProps) => {

@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import type { AboutDictionary } from "@/infrastructure/types";
+import type { SpeakingCardTranslations } from "@/infrastructure/types/translations/screens";
 
 interface SpeakingCardProps {
-  t: AboutDictionary;
+  t: SpeakingCardTranslations;
 }
 
 const SpeakingCard = ({ t }: SpeakingCardProps) => {
@@ -10,16 +10,16 @@ const SpeakingCard = ({ t }: SpeakingCardProps) => {
     <div className="bg-surface-container-low rounded-xl p-10 ghost-border flex items-center gap-8">
       <div className="w-24 h-24 shrink-0 rounded-lg overflow-hidden bg-slate-200">
         <img
-          alt={t.speakingAlt}
+          alt={t.imageAlt}
           className="w-full h-full object-cover grayscale"
           src="/assets/images/me/productOwnerShip.jpg"
         />
       </div>
       <div>
         <h3 className="text-xl font-bold text-primary-container">
-          {t.speakingTitle}
+          {t.title}
         </h3>
-        <p className="text-on-surface-variant mt-2">{t.speakingDesc}</p>
+        <p className="text-on-surface-variant mt-2">{t.description}</p>
       </div>
     </div>
   );

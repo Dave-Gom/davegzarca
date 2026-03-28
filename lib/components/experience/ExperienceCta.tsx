@@ -1,8 +1,8 @@
-import type { ExperienceDictionary } from "@/infrastructure/types";
+import type { ExperienceCtaTranslations } from "@/infrastructure/types/translations/screens";
 import Link from "next/link";
 
 interface ExperienceCtaProps {
-  t: ExperienceDictionary;
+  t: ExperienceCtaTranslations;
   lang: string;
   resumeFile: string;
 }

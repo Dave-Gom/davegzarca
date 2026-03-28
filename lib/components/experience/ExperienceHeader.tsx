@@ -1,7 +1,7 @@
-import type { ExperienceDictionary } from "@/infrastructure/types";
+import type { ExperienceHeaderTranslations } from "@/infrastructure/types/translations/screens";
 
 interface ExperienceHeaderProps {
-  t: ExperienceDictionary;
+  t: ExperienceHeaderTranslations;
 }
 
 const ExperienceHeader = ({ t }: ExperienceHeaderProps) => {

@@ -31,8 +31,8 @@ const ContactPage = async ({
   return (
     <main className="pt-32 pb-24 px-8 max-w-7xl mx-auto min-h-screen">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-        <ContactHero t={t} />
-        <ContactSidebar t={t} />
+        <ContactHero t={t.hero} />
+        <ContactSidebar t={t.sidebar} />
       </div>
     </main>
   );

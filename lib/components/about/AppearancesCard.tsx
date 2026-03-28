@@ -1,7 +1,7 @@
-import type { AboutDictionary } from "@/infrastructure/types";
+import type { AppearancesCardTranslations } from "@/infrastructure/types/translations/screens";
 
 interface AppearancesCardProps {
-  t: AboutDictionary;
+  t: AppearancesCardTranslations;
 }
 
 const AppearancesCard = ({ t }: AppearancesCardProps) => {
@@ -15,7 +15,7 @@ const AppearancesCard = ({ t }: AppearancesCardProps) => {
     <div className="bg-surface-container-lowest rounded-xl p-10 ghost-border flex flex-col justify-center">
       <div className="flex justify-between items-center mb-4">
         <h4 className="font-bold text-primary uppercase text-xs tracking-[0.2em]">
-          {t.appearancesTitle}
+          {t.title}
         </h4>
         <span className="text-secondary text-xs font-mono">2022-2025</span>
       </div>

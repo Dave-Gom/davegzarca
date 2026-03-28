@@ -1,8 +1,8 @@
-import type { ContactDictionary } from "@/infrastructure/types";
+import type { ContactCardTranslations } from "@/infrastructure/types/translations/screens";
 import SocialLinks from "./SocialLinks";
 
 interface ContactCardProps {
-  t: ContactDictionary;
+  t: ContactCardTranslations;
 }
 
 const ContactCard = ({ t }: ContactCardProps) => {

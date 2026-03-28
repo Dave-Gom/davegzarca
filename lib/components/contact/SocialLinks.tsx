@@ -1,7 +1,7 @@
-import type { ContactDictionary } from "@/infrastructure/types";
+import type { ContactCardTranslations } from "@/infrastructure/types/translations/screens";
 
 interface SocialLinksProps {
-  t: ContactDictionary;
+  t: ContactCardTranslations;
 }
 
 const socialItems = [

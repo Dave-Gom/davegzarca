@@ -31,9 +31,9 @@ const AboutPage = async ({
 
   return (
     <main className="pt-32 pb-24 px-8 max-w-7xl mx-auto">
-      <AboutHeroSection t={t} />
-      <PhilosophySection t={t} />
-      <BeyondCodeSection t={t} />
+      <AboutHeroSection t={t.heroSection} />
+      <PhilosophySection t={t.philosophySection} />
+      <BeyondCodeSection t={t.beyondCodeSection} />
     </main>
   );
 };

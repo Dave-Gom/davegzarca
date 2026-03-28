@@ -1,7 +1,7 @@
-import type { AboutDictionary } from "@/infrastructure/types";
+import type { OpenSourceCardTranslations } from "@/infrastructure/types/translations/screens";
 
 interface OpenSourceCardProps {
-  t: AboutDictionary;
+  t: OpenSourceCardTranslations;
 }
 
 const OpenSourceCard = ({ t }: OpenSourceCardProps) => {
@@ -13,17 +13,17 @@ const OpenSourceCard = ({ t }: OpenSourceCardProps) => {
             source
           </span>
           <span className="text-sm text-on-primary-container font-bold">
-            {t.openSourceLabel}
+            {t.label}
           </span>
         </div>
-        <h3 className="text-2xl font-bold mb-4">{t.openSourceTitle}</h3>
+        <h3 className="text-2xl font-bold mb-4">{t.title}</h3>
         <p className="text-on-primary-container text-base leading-relaxed">
-          {t.openSourceDesc}
+          {t.description}
         </p>
       </div>
       <div className="mt-12 relative z-10">
         <span className="text-4xl font-black text-on-primary-container/20">
-          {t.openSourceStars}
+          {t.stars}
         </span>
       </div>
       <div className="absolute -bottom-8 -right-8 opacity-10 group-hover:scale-110 transition-transform duration-500">

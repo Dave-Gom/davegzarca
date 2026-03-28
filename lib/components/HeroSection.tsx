@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import type { Dictionary } from "@/infrastructure/types";
+import type { HeroSectionTranslations } from "@/infrastructure/types/translations/screens";
 import Link from "next/link";
 
 interface HeroSectionProps {
-  t: Dictionary["home"];
+  t: HeroSectionTranslations;
   lang: string;
 }
 

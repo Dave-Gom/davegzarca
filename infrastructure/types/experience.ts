@@ -1,3 +1,1 @@
-import type { Dictionary } from "./dictionary";
-
-export type ExperienceDictionary = Dictionary["experience"];
+export type { ExperienceTranslations as ExperienceDictionary } from "./translations/screens";

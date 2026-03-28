@@ -1,8 +1,8 @@
-import type { ExperienceDictionary } from "@/infrastructure/types";
+import type { ExperienceTimelineTranslations } from "@/infrastructure/types/translations/screens";
 import TimelineItem from "./TimelineItem";
 
 interface ExperienceTimelineProps {
-  t: ExperienceDictionary;
+  t: ExperienceTimelineTranslations;
 }
 
 const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {

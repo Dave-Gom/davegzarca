@@ -1,0 +1,247 @@
+import type { ScreensTranslations } from "@/infrastructure/types/translations/screens";
+
+const screens: ScreensTranslations = {
+  home: {
+    heroSection: {
+      basedIn: "Wohnhaft in Areguá, Paraguay",
+      heroName: "David Gómez.",
+      heroTagline: "Mobile Apps für Millionen Nutzer entwickeln.",
+      heroDescription:
+        "Senior Fullstack Mobile & Web Entwickler, spezialisiert auf React Native und Native iOS Architekturen, unterstützt durch Node.js Backends für den Finanz- und Gesundheitssektor.",
+      viewWork: "Meine Arbeit ansehen",
+      getInTouch: "Kontakt aufnehmen",
+      portraitAlt: "Foto von David Gómez",
+    },
+    aboutSection: {
+      philosophyLabel: "Die Philosophie",
+      philosophyTitle:
+        "Code ist der Ausgangspunkt; Skalierbarkeit und Teamführung machen den Unterschied.",
+      philosophyP1Start:
+        "Mit über 6 Jahren Erfahrung trage ich zu Entwicklungsteams bei und leite sie über den gesamten Lebenszyklus wirkungsvoller mobiler Produkte hinweg. Mein Ansatz konzentriert sich auf ",
+      philosophyP1Bold1: "effizienten, skalierbaren Code",
+      philosophyP1Mid: " und ",
+      philosophyP1Bold2: "zuverlässige Lieferung",
+      philosophyP1End: ".",
+      philosophyP2:
+        "Ich bin die Brücke zwischen technischer Umsetzung und Geschäftszielen von Architekturentscheidungen und State Management bis hin zu API-Design und Teamkoordination stets darauf ausgerichtet, Lösungen zu liefern, die auch im großen Maßstab Bestand haben.",
+      yearsCount: "6+",
+      yearsLabel: "Jahre Erfahrung",
+      appsCount: "4",
+      appsLabel: "Veröffentlichte Apps",
+    },
+    projectsSection: {
+      worksLabel: "Ausgewählte Arbeiten",
+      worksTitle: "Wirkungsorientierte Entwicklung",
+      project1Alt: "Billetera Mango Fintech App",
+      project1Title: "Billetera Mango",
+      project1Desc:
+        "React Native Entwickler für eine der meistgenutzten Fintech-Apps Paraguays. Entwicklung und Wartung hochwertiger Features für eine elektronische Wallet mit über 1 Million aktiven Nutzern, mit starkem Fokus auf Performance und Skalierbarkeit.",
+      project1Impact: "1M+ Aktive Nutzer",
+      project1ImpactLabel: "Skalierung & Wirkung",
+      project1Role: "React Native Developer Sr.",
+      project2Alt: "Conti Móvil Banking App",
+      project2Title: "Conti Móvil — Banco Continental",
+      project2Desc:
+        "Mitarbeit an der Entwicklung von Conti Móvil, Paraguays führender Mobile-Banking-App, sowie Continental Banca Empresas für Firmenkunden. Neue Features ausgeliefert und Front-End-Probleme unter Scrum-Methodik gelöst.",
+      project2Impact: "500K+ Nutzer",
+      project2ImpactLabel: "Nationale Banking-Skalierung",
+      project2Role: "React Native Developer",
+    },
+    experienceSection: {
+      historyLabel: "Werdegang",
+      historyTitle: "Karriere-Meilensteine",
+      role1Period: "2024 — Heute",
+      role1Title: "React Native Developer Sr. — Billetera Mango",
+      role1Desc:
+        "Entwicklung und Wartung neuer Features für Paraguays führende elektronische Wallet. Zusammenarbeit in einem Team mit Fokus auf hochwertige UX, Performance-Optimierung und Skalierbarkeit.",
+      role1Item1:
+        "Mitwirkung an einer Plattform mit über 1 Million aktiven Nutzern.",
+      role1Item2:
+        "Fokus auf Performance, Code-Qualität und skalierbare Architektur mit React Native, TypeScript, Redux, Sentry, OneSignal und Rive.",
+      role2Period: "2022 — 2024",
+      role2Title: "React Native Developer — Banco Continental SAECA",
+      role2Desc:
+        "Arbeit an zwei großen Banking-Apps: Conti Móvil (Privatkunden) und Continental Banca Empresas (Firmenkunden). Features ausgeliefert und Probleme gelöst für ein reibungsloses Banking-Erlebnis für Hunderttausende Nutzer.",
+      role2Item1:
+        "Beigetragen zu Conti Móvil, einer Mobile-Banking-App mit über 450.000 Nutzern.",
+      role2Item2:
+        "Beteiligung an der kontinuierlichen Produktverbesserung unter Agile/Scrum-Methodik.",
+      role3Period: "2022",
+      role3Title: "Fullstack-Entwickler — Arco SA",
+      role3Desc:
+        "Arbeit als Fullstack-Entwickler, Verwaltung und Verbesserung des zentralen Websystems einer Radiologieklinik, Entwicklung von Modulen für Patientenverwaltung, Abrechnung und rollenbasierte Zugriffskontrolle.",
+      role4Period: "2019 — 2021",
+      role4Title: "Junior-Entwickler — Sercicronos",
+      role4Desc:
+        "Karrierestart als Junior-Entwickler bei Sercicronos, einer Plattform für Marathon- und Laufveranstaltungsmanagement.",
+      role5Period: "2024 — Heute",
+      role5Title: "Freelance-Entwickler — PadelSys",
+      role5Desc:
+        "Alleiniger Entwickler von PadelSys, einer Plattform für Padel-Turniermanagement in Paraguay. Entwicklung der Web-App und Mitwirkung an der mobilen App für Turniererstellung, Spielerregistrierung, Bracket-Generierung und Analytik.",
+    },
+    skillsSection: {
+      skillsLabel: "Kernkompetenzen",
+      skillsTitle: "Der Tech Stack",
+      mobileTitle: "Mobile Entwicklung",
+      backendTitle: "Back-end & Systeme",
+      devopsTitle: "DevOps & Tools",
+    },
+    contactSection: {
+      ctaLabel: "Offen für neue Möglichkeiten",
+      ctaTitle: "Lass uns etwas Skalierbares bauen.",
+      ctaLinkedIn: "LinkedIn Profil",
+    },
+  },
+  about: {
+    heroSection: {
+      subtitle: "Senior Fullstack Mobile & Web Entwickler",
+      title: "Über mich",
+      p1: "Ich bin Fullstack Mobile & Web Entwickler mit über 6 Jahren Erfahrung in der Entwicklung leistungsstarker Anwendungen, die von Millionen Menschen in Paraguay genutzt werden. Mein Schwerpunkt liegt auf React Native, TypeScript und Node.js, mit nachgewiesener Erfolgsbilanz im Finanzsektor.",
+      p2: "Mein Fokus liegt auf der Lieferung von sauberem, skalierbarem und wartbarem Code, während ich aktiv zum Teamwachstum beitrage. Ich entfalte mein Potenzial in Scrum-Umgebungen und leite Projekte von der Architektur bis zur Auslieferung — sowohl als Individual Contributor als auch als Teamleiter.",
+      portraitAlt: "Professionelles Porträt von David Gómez",
+    },
+    philosophySection: {
+      philosophyTitle: "Meine Philosophie",
+      archTitle: "Architektonische Integrität",
+      archDesc:
+        "Ich glaube an den Aufbau von Strukturen, die es Teams ermöglichen, schnell voranzukommen, ohne untragbare technische Schulden anzuhäufen. Jedes Modul sollte genauso einfach zu ersetzen wie zu bauen sein.",
+      precisionTitle: "Strategische Präzision",
+      precisionDesc:
+        "Jede technische Entscheidung ist eine Geschäftsentscheidung. Ich bewerte die Langlebigkeit von Bibliotheken, die Vertrautheit des Teams und Performance-Kompromisse, bevor ich mich auf eine architektonische Richtung festlege.",
+      craftTitle: "Code als Handwerk",
+      craftDesc:
+        "Qualität ist nicht verhandelbar. Ich setze mich für saubere, ausdrucksstarke Codebases, rigorose Code-Reviews und eine Kultur der kontinuierlichen Verbesserung ein.",
+      humanTitle: "Menschenzentriertheit",
+      humanDesc:
+        "Großartige Apps werden von großartigen Teams gebaut. Ich konzentriere mich auf klare Kommunikation, gut dokumentierte APIs und die Reduzierung der kognitiven Belastung für alle Produktbeteiligten.",
+    },
+    beyondCodeSection: {
+      title: "Jenseits des Codes",
+      subtitle: "Führung & Wirkung",
+      mentoringCard: {
+        label: "Mentoring",
+        title: "Verteilte Teams führen",
+        description:
+          "Als Projektleiter für Farmacia Canaria leitete ich ein verteiltes Team von 3 Entwicklern und war gleichzeitig der einzige Backend-Entwickler übersetzte Kundenanforderungen in funktionale, rollenbasierte Module für eine Telemedizin-Plattform.",
+        workshops: "Teamkoordination",
+        coaching: "Technische Ownership",
+      },
+      openSourceCard: {
+        label: "Freelance",
+        title: "Vollständige Projektverantwortung",
+        description:
+          "Als alleiniger Entwickler von PadelSys und der Realtec-Landingpage habe ich Projekte von Anfang bis Ende betreut: von Architektur und Stakeholder-Meetings bis hin zu Deployment und laufender Wartung.",
+        stars: "+1K Nutzer bedient",
+      },
+      speakingCard: {
+        imageAlt: "David Gómez bei der Arbeit am Code",
+        title: "Product Ownership",
+        description:
+          "Als alleiniger Entwickler von PadelSys verantworte ich den gesamten Produktlebenszyklus von der Architektur über Stakeholder-Meetings bis hin zu Deployment und Wartung. Vollständige technische und Produkt-Ownership einer Plattform für Padel-Spieler in Paraguay.",
+      },
+      appearancesCard: {
+        title: "Aktuelle Projekte",
+        appearance1: "PadelSys",
+        appearance1Detail: "Padel-Turniere",
+        appearance2: "Billetera Mango",
+        appearance2Detail: "Fintech · 1M+ Nutzer",
+        appearance3: "Conti Móvil",
+        appearance3Detail: "Banking · 450K+ Nutzer",
+      },
+    },
+  },
+  experience: {
+    header: {
+      subtitle: "Beruflicher Werdegang",
+      title: "Erfahrung",
+      description:
+        "Über 6 Jahre Entwicklung wirkungsvoller mobiler und Web-Produkte in den Bereichen Finanzen, Gesundheit und Sport von Banking-Apps mit 450K Nutzern bis hin zu einer Fintech-Wallet mit über 1 Million.",
+    },
+    timeline: {
+      current: "Aktuell",
+      years3: "2 Jahre",
+      years2: "4 Monate",
+      period1: "2024 — HEUTE",
+      company1: "Billetera Mango",
+      role1: "React Native Developer Sr.",
+      role1Item1:
+        "Entwicklung und Wartung neuer Features für eine elektronische Wallet mit über 1 Million aktiven Nutzern.",
+      role1Item2:
+        "Zusammenarbeit in einem Scrum-Team zur Lieferung hochwertiger UX mit Fokus auf Performance und Skalierbarkeit.",
+      role1Item3:
+        "Arbeit mit React Native, UIKit, Kotlin, TypeScript, Swift, Redux, OneSignal, Sentry und Rive.",
+      period2: "2022 — 2024",
+      company2: "Banco Continental SAECA",
+      role2: "React Native Developer",
+      role2Item1:
+        "Beigetragen zu Conti Móvil, Paraguays Mobile-Banking-App mit über 450.000 Nutzern.",
+      role2Item2:
+        "Entwicklung von Features für Continental Banca Empresas, die Firmenkunden-App der Bank.",
+      role2Item3:
+        "Lieferung von Front-End-Verbesserungen und Fehlerbehebungen unter Agile/Scrum-Methodik.",
+      period3: "2022",
+      company3: "Arco SA",
+      role3: "Full Stack Entwickler",
+      role3Item1:
+        "Verwaltung und Verbesserung des zentralen Websystems einer Radiologieklinik.",
+      role3Item2:
+        "Entwicklung von Modulen für Patientenverwaltung, Abrechnung und rollenbasierte Zugriffskontrolle.",
+      role3Item3: "Tech Stack: Laravel, Vue.js, Express.js, HTML5, MySQL, PHP.",
+      period4: "2019 — 2021",
+      company4: "Sercicronos",
+      years4: "2 Jahre",
+      role4: "Junior-Entwickler",
+      role4Item1:
+        "Entwicklung und Wartung einer Plattform für Marathon- und Laufveranstaltungsmanagement.",
+      role4Item2:
+        "Erstellung von Funktionen für Eventregistrierung, Zeitmesssysteme und Ergebnisveröffentlichung.",
+      role4Item3: "Tech Stack: HTML5, CSS3, JavaScript, PHP, MySQL.",
+      period5: "2024 — HEUTE",
+      company5: "PadelSys",
+      years5: "Freelance",
+      role5: "Alleiniger Entwickler",
+      role5Item1:
+        "Entwicklung einer Padel-Turniermanagement-Plattform, die in ganz Paraguay genutzt wird.",
+      role5Item2:
+        "Turniererstellung, Spielerregistrierung, Bracket-Generierung und Analytik-Funktionen.",
+      role5Item3:
+        "Tech Stack: PHP, JavaScript, jQuery, Bootstrap, Chart.js, MySQL.",
+    },
+    cta: {
+      ctaTitle: "Bereit, etwas Spannendes zu bauen?",
+      ctaDesc:
+        "Offen für Senior Mobile Development Rollen und Freelance-Beratungsmöglichkeiten.",
+      ctaButton: "Kontakt aufnehmen",
+      ctaDownload: "Lebenslauf herunterladen",
+    },
+  },
+  contact: {
+    hero: {
+      availability: "Offen für neue Möglichkeiten",
+      title: "Verfügbar für",
+      titleLine2: "Neue Möglichkeiten",
+      description:
+        "Lass uns etwas Skalierbares bauen. Ich bin spezialisiert auf React Native und Native iOS Mobilentwicklung, Fullstack Node.js Architekturen und technische Projektleitung.",
+      imageAlt: "David Gómez — Asunción, Paraguay",
+    },
+    sidebar: {
+      contactCard: {
+        formTitle: "Kontakt aufnehmen",
+        emailLabel: "E-Mail-Adresse",
+        nameLabel: "Vollständiger Name",
+        namePlaceholder: "Max Mustermann",
+        visionLabel: "Projektvision",
+        visionPlaceholder:
+          "Beschreiben Sie kurz Ihr Projekt oder die Rolle...",
+        sendButton: "Nachricht senden",
+        socialLabel: "Online finden",
+      },
+      trustIndicator: {
+        trustText:
+          "Gearbeitet an Apps, die von über 1,5 Millionen Menschen in Paraguay genutzt werden.",
+      },
+    },
+  },
+};
+
+export default screens;

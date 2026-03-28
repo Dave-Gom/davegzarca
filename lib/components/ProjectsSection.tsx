@@ -1,9 +1,9 @@
-import type { Dictionary } from "@/infrastructure/types";
+import type { ProjectsSectionTranslations } from "@/infrastructure/types/translations/screens";
 import ProjectCard from "./ProjectCard";
 import SectionHeader from "./SectionHeader";
 
 interface ProjectsSectionProps {
-  t: Dictionary["home"];
+  t: ProjectsSectionTranslations;
 }
 
 const ProjectsSection = ({ t }: ProjectsSectionProps) => {

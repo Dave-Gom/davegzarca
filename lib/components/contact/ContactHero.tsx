@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import type { ContactDictionary } from "@/infrastructure/types";
+import type { ContactHeroTranslations } from "@/infrastructure/types/translations/screens";
 
 interface ContactHeroProps {
-  t: ContactDictionary;
+  t: ContactHeroTranslations;
 }
 
 const ContactHero = ({ t }: ContactHeroProps) => {
