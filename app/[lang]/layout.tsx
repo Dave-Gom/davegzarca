@@ -30,6 +30,7 @@ export const generateMetadata = async ({
   return {
     title: dict.metadata.homeTitle,
     description: dict.metadata.homeDescription,
+    keywords: dict.metadata.homeKeywords,
   };
 };
 

@@ -15,7 +15,11 @@ export const generateMetadata = async ({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang);
-  return { title: dict.metadata.contactTitle };
+  return {
+    title: dict.metadata.contactTitle,
+    description: dict.metadata.contactDescription,
+    keywords: dict.metadata.contactKeywords,
+  };
 };
 
 const ContactPage = async ({

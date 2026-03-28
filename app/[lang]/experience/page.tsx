@@ -16,7 +16,11 @@ export const generateMetadata = async ({
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang);
-  return { title: dict.metadata.experienceTitle };
+  return {
+    title: dict.metadata.experienceTitle,
+    description: dict.metadata.experienceDescription,
+    keywords: dict.metadata.experienceKeywords,
+  };
 };
 
 const ExperiencePage = async ({
