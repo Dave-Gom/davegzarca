@@ -43,7 +43,7 @@ const ProjectsSection = ({ t }: ProjectsSectionProps) => {
               "assets/images/projects/contimovil/image7.png",
             ]}
             imageAlt={t.project2Alt}
-            tags={["Swift UI", "PostgreSQL", "AWS Lambda"]}
+            tags={["React Native", "Firebase", "UIKit"]}
             title={t.project2Title}
             description={t.project2Desc}
             impact={t.project2Impact}
