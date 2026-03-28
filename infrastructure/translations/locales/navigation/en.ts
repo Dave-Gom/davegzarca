@@ -7,7 +7,7 @@ const navigation: NavigationTranslations = {
     experience: "Experience",
     home: "Home",
     contact: "Contact",
-    resume: "CV",
+    resume: "Resume",
     resumeFile: "/assets/docs/resume/cv-en.pdf",
   },
 };

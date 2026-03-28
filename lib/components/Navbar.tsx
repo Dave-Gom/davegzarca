@@ -40,7 +40,6 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
   };
 
   const allLocales: Locale[] = ["en", "es", "de"];
-  const otherLocales = allLocales.filter((l) => l !== lang);
 
   return (
     <nav className="fixed top-0 w-full z-50 shadow-sm bg-white">
@@ -68,19 +67,19 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
         </div>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
-              {lang.toUpperCase()}
-            </span>
-            <span className="text-slate-300 text-xs">/</span>
-            {otherLocales.map((l, i) => (
+            {allLocales.map((l, i) => (
               <span key={l} className="flex items-center">
                 <Link
                   href={pathname.replace(`/${lang}`, `/${l}`)}
                   className="text-xs font-bold uppercase tracking-wider text-slate-400 hover:text-slate-900 transition-colors"
+                  style={{
+                    color: l === lang ? "#1f2937" : "#9ca3af",
+                    fontWeight: l === lang ? "bolder" : "bold",
+                  }}
                 >
                   {l.toUpperCase()}
                 </Link>
-                {i < otherLocales.length - 1 && (
+                {i < allLocales.length - 1 && (
                   <span className="text-slate-300 text-xs mx-1">/</span>
                 )}
               </span>
