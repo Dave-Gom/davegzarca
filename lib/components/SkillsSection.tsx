@@ -24,10 +24,15 @@ const SkillsSection = ({ t }: SkillsSectionProps) => {
             title={t.mobileTitle}
             skills={[
               "React Native",
-              "UIKit / Swift UI",
+              "UIKit / SwiftUI",
               "Android / Kotlin",
               "Flutter / Dart",
             ]}
+          />
+          <SkillCard
+            icon="laptop"
+            title={t.webTitle}
+            skills={["Next.js", "Vue.js", "CSS", "Tailwind CSS", "Laravel"]}
           />
           <SkillCard
             icon="database"
@@ -36,12 +41,11 @@ const SkillsSection = ({ t }: SkillsSectionProps) => {
               "Node.js",
               "Express.js",
               "PostgreSQL",
+              "MySQL",
               "Redis",
               "MongoDB",
-              "Laravel",
             ]}
           />
-
           <SkillCard
             icon="terminal"
             title={t.devopsTitle}

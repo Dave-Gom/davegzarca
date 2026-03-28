@@ -70,6 +70,7 @@ export type SkillsSectionTranslations = {
   skillsLabel: string;
   skillsTitle: string;
   mobileTitle: string;
+  webTitle: string;
   backendTitle: string;
   devopsTitle: string;
 };

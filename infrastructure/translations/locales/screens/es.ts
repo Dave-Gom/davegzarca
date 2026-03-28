@@ -83,6 +83,7 @@ const screens: ScreensTranslations = {
       skillsLabel: "Competencias clave",
       skillsTitle: "El Stack Técnico",
       mobileTitle: "Desarrollo Móvil",
+      webTitle: "Desarrollo Web",
       backendTitle: "Back-end y Sistemas",
       devopsTitle: "DevOps y Herramientas",
     },
