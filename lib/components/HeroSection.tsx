@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import type { Dictionary } from "@/infrastructure/types";
+import Link from "next/link";
 
 interface HeroSectionProps {
   t: Dictionary["home"];
@@ -45,7 +45,7 @@ const HeroSection = ({ t, lang }: HeroSectionProps) => {
           <div className="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low shadow-2xl rotate-3 transform hover:rotate-0 transition-transform duration-500">
             <img
               alt={t.portraitAlt}
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full object-cover transition-all duration-700"
               src="/assets/images/me/david_principal.jpeg"
             />
           </div>
