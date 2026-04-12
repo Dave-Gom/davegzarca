@@ -68,7 +68,7 @@ const Navbar = ({ lang, labels }: NavbarProps) => {
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1">
             {allLocales.map((l, i) => (
-              <span key={l} className="flex items-center">
+              <span key={`locale-${l}`} className="flex items-center">
                 <Link
                   href={pathname.replace(`/${lang}`, `/${l}`)}
                   className="text-xs font-bold uppercase tracking-wider text-slate-400 hover:text-slate-900 transition-colors"
