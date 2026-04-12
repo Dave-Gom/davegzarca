@@ -69,20 +69,11 @@ export const generateMetadata = async ({
       siteName: "David Gómez Portfolio",
       title: dict.metadata.homeTitle,
       description: dict.metadata.homeDescription,
-      images: [
-        {
-          url: "/assets/images/me/david_principal.jpeg",
-          width: 1200,
-          height: 630,
-          alt: "David Gómez — Senior Fullstack Mobile & Web Developer",
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title: dict.metadata.homeTitle,
       description: dict.metadata.homeDescription,
-      images: ["/assets/images/me/david_principal.jpeg"],
     },
     alternates: {
       canonical: `${SITE_URL}/${locale}`,
