@@ -1,6 +1,7 @@
 import type { Locale } from "@/infrastructure/types";
 import { Footer } from "@/lib/components/Footer";
 import Navbar from "@/lib/components/Navbar";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import {
@@ -9,6 +10,14 @@ import {
   locales,
 } from "../../infrastructure/translations/dictionaries";
 import "../globals.css";
+
+const SITE_URL = "https://www.davegzarca.dev";
+
+const ogLocaleMap: Record<Locale, string> = {
+  en: "en_US",
+  es: "es_PY",
+  de: "de_DE",
+};
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,14 +32,70 @@ export const generateMetadata = async ({
   params,
 }: {
   params: Promise<{ lang: string }>;
-}) => {
+}): Promise<Metadata> => {
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
-  const dict = await getDictionary(lang as Locale);
+  const locale = lang as Locale;
+  const dict = await getDictionary(locale);
+
   return {
+    metadataBase: new URL(SITE_URL),
     title: dict.metadata.homeTitle,
     description: dict.metadata.homeDescription,
     keywords: dict.metadata.homeKeywords,
+    authors: [{ name: "David Gómez" }],
+    creator: "David Gómez",
+    publisher: "David Gómez",
+    applicationName: "David Gómez Portfolio",
+    category: "Software Development",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    openGraph: {
+      type: "website",
+      locale: ogLocaleMap[locale],
+      alternateLocale: locales
+        .filter((l) => l !== locale)
+        .map((l) => ogLocaleMap[l]),
+      url: `${SITE_URL}/${locale}`,
+      siteName: "David Gómez Portfolio",
+      title: dict.metadata.homeTitle,
+      description: dict.metadata.homeDescription,
+      images: [
+        {
+          url: "/assets/images/me/david_principal.jpeg",
+          width: 1200,
+          height: 630,
+          alt: "David Gómez — Senior Fullstack Mobile & Web Developer",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: dict.metadata.homeTitle,
+      description: dict.metadata.homeDescription,
+      images: ["/assets/images/me/david_principal.jpeg"],
+    },
+    alternates: {
+      canonical: `${SITE_URL}/${locale}`,
+      languages: Object.fromEntries(
+        locales.map((l) => [ogLocaleMap[l], `${SITE_URL}/${l}`])
+      ),
+    },
+    referrer: "origin-when-cross-origin",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
   };
 };
 
