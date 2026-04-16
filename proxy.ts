@@ -1,17 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
-import Negotiator from "negotiator";
-import { match } from "@formatjs/intl-localematcher";
 
 const locales = ["en", "es", "de"];
 const defaultLocale = "en";
 
 const getLocale = (request: NextRequest): string => {
-  const headers: Record<string, string> = {};
-  request.headers.forEach((value, key) => {
-    headers[key] = value;
-  });
-  const languages = new Negotiator({ headers }).languages();
-  return match(languages, locales, defaultLocale);
+  const acceptLanguage = request.headers.get("accept-language");
+  if (!acceptLanguage) return defaultLocale;
+
+  const preferred = acceptLanguage
+    .split(",")
+    .map((lang) => lang.split(";")[0].trim().toLowerCase())
+    .map((lang) => lang.split("-")[0]);
+
+  for (const lang of preferred) {
+    if (locales.includes(lang)) return lang;
+  }
+
+  return defaultLocale;
 };
 
 export const proxy = (request: NextRequest) => {
