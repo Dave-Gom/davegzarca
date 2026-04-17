@@ -10,7 +10,7 @@ import PhilosophySection from "@/lib/components/about/PhilosophySection";
 import BeyondCodeSection from "@/lib/components/about/BeyondCodeSection";
 import type { Metadata } from "next";
 
-const SITE_URL = "https://www.davegzarca.dev";
+const SITE_URL = "https://davegzarca.dev";
 
 const ogLocaleMap: Record<Locale, string> = {
   en: "en_US",

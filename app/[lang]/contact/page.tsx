@@ -9,7 +9,7 @@ import ContactHero from "@/lib/components/contact/ContactHero";
 import ContactSidebar from "@/lib/components/contact/ContactSidebar";
 import type { Metadata } from "next";
 
-const SITE_URL = "https://www.davegzarca.dev";
+const SITE_URL = "https://davegzarca.dev";
 
 const ogLocaleMap: Record<Locale, string> = {
   en: "en_US",

@@ -10,7 +10,7 @@ import ExperienceTimeline from "@/lib/components/experience/ExperienceTimeline";
 import ExperienceCta from "@/lib/components/experience/ExperienceCta";
 import type { Metadata } from "next";
 
-const SITE_URL = "https://www.davegzarca.dev";
+const SITE_URL = "https://davegzarca.dev";
 
 const ogLocaleMap: Record<Locale, string> = {
   en: "en_US",

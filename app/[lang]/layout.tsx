@@ -11,7 +11,7 @@ import {
 } from "../../infrastructure/translations/dictionaries";
 import "../globals.css";
 
-const SITE_URL = "https://www.davegzarca.dev";
+const SITE_URL = "https://davegzarca.dev";
 
 const ogLocaleMap: Record<Locale, string> = {
   en: "en_US",

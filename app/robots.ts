@@ -7,7 +7,7 @@ const robots = (): MetadataRoute.Robots => ({
       allow: "/",
     },
   ],
-  sitemap: "https://www.davegzarca.dev/sitemap.xml",
+  sitemap: "https://davegzarca.dev/sitemap.xml",
 });
 
 export default robots;

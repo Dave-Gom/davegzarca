@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://www.davegzarca.dev";
+const SITE_URL = "https://davegzarca.dev";
 const locales = ["en", "es", "de"];
 const pages = ["", "/about", "/contact", "/experience"];
 
