@@ -2,27 +2,27 @@ import type { CommonTranslations } from "@/infrastructure/types/translations/com
 
 const common: CommonTranslations = {
   metadata: {
-    homeTitle: "David Gómez | Desarrollador Senior Fullstack Mobile & Web",
+    homeTitle:
+      "David Gómez | Senior Fullstack Developer — React Native & Node.js",
     homeDescription:
-      "Portfolio de David Gómez, Desarrollador Senior Fullstack Mobile & Web en Paraguay. Especializado en React Native, TypeScript, Node.js y arquitecturas escalables para el sector financiero y de salud.",
+      "Desarrollador Senior Fullstack con +6 años en fintech y banca móvil. Creo apps con React Native y Node.js usadas por más de 1.5 millones de usuarios.",
     homeKeywords:
-      "David Gómez, desarrollador mobile, React Native, TypeScript, Node.js, fullstack developer, Paraguay, iOS, Android, Kotlin, Swift, desarrollo móvil, aplicaciones móviles, fintech, banca móvil, Billetera Mango, Conti Móvil",
-    aboutTitle: "Sobre mí | David Gómez — Desarrollador Mobile & Web",
+      "David Gómez, desarrollador fullstack senior, React Native, Node.js, TypeScript, fintech, banca móvil, Paraguay",
+    aboutTitle: "Sobre David Gómez | Desarrollador Senior Fullstack",
     aboutDescription:
-      "Conocé la trayectoria de David Gómez: más de 6 años de experiencia en desarrollo mobile y web, liderando equipos y construyendo apps utilizadas por millones en Paraguay.",
+      "+6 años construyendo apps móviles y web en fintech. Liderazgo técnico, arquitecturas escalables y experiencia real en productos con millones de usuarios.",
     aboutKeywords:
-      "David Gómez, sobre mí, desarrollador senior, React Native, liderazgo técnico, Scrum, equipos distribuidos, PadelSys, freelance, desarrollo fullstack, portfolio desarrollador",
-    experienceTitle:
-      "Experiencia | David Gómez — Desarrollador Mobile & Web",
+      "David Gómez, desarrollador senior, React Native, TypeScript, liderazgo técnico, Scrum, desarrollo fullstack",
+    experienceTitle: "Experiencia | David Gómez — Fullstack Developer",
     experienceDescription:
-      "Experiencia profesional de David Gómez: desde apps bancarias con +450K usuarios hasta billeteras fintech con más de 1 millón de usuarios activos en Paraguay.",
+      "De apps bancarias con +450K usuarios a billeteras digitales con +1M. React Native, TypeScript y Node.js en entornos fintech de alto impacto.",
     experienceKeywords:
-      "experiencia profesional, React Native developer, Billetera Mango, Banco Continental, Conti Móvil, PadelSys, Sercicronos, Arco SA, desarrollo móvil Paraguay, fintech, banca digital",
-    contactTitle: "Contacto | David Gómez — Desarrollador Mobile & Web",
+      "experiencia React Native, Billetera Mango, Banco Continental, fintech Paraguay, desarrollo móvil, banca digital",
+    contactTitle: "Contacto | David Gómez — Senior Developer",
     contactDescription:
-      "Contactá a David Gómez para roles senior de desarrollo mobile, consultoría freelance o proyectos fullstack con React Native, Node.js y TypeScript.",
+      "Disponible para roles senior, freelance y consultoría en React Native, Node.js y TypeScript. Remoto desde Paraguay, experiencia en equipos distribuidos.",
     contactKeywords:
-      "contacto, contratar desarrollador mobile, React Native freelance, consultoría desarrollo móvil, David Gómez contacto, desarrollador Paraguay, proyectos fullstack",
+      "contratar desarrollador React Native, freelance fullstack, consultoría mobile, desarrollador senior Paraguay",
   },
   footer: {
     copyright:
