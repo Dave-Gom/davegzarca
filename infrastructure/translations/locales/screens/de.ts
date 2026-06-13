@@ -40,7 +40,7 @@ const screens: ScreensTranslations = {
       project1ImpactLabel: "Skalierung & Wirkung",
       project1Role: "React Native Developer Sr.",
       project2Alt: "Conti Móvil Banking App",
-      project2Title: "Conti Móvil — Banco Continental",
+      project2Title: "Conti Móvil: Banco Continental",
       project2Desc:
         "Mitarbeit an der Entwicklung von Conti Móvil, Paraguays führender Mobile-Banking-App, sowie Continental Banca Empresas für Firmenkunden. Neue Features ausgeliefert und Front-End-Probleme unter Scrum-Methodik gelöst.",
       project2Impact: "500K+ Nutzer",
@@ -232,8 +232,7 @@ const screens: ScreensTranslations = {
         nameLabel: "Vollständiger Name",
         namePlaceholder: "Max Mustermann",
         visionLabel: "Projektvision",
-        visionPlaceholder:
-          "Beschreiben Sie kurz Ihr Projekt oder die Rolle...",
+        visionPlaceholder: "Beschreiben Sie kurz Ihr Projekt oder die Rolle...",
         sendButton: "Nachricht senden",
         socialLabel: "Online finden",
       },

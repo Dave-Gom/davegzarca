@@ -40,7 +40,7 @@ const screens: ScreensTranslations = {
       project1ImpactLabel: "Escala e Impacto",
       project1Role: "React Native Developer Sr.",
       project2Alt: "App bancaria Conti Móvil",
-      project2Title: "Conti Móvil — Banco Continental",
+      project2Title: "Conti Móvil: Banco Continental",
       project2Desc:
         "Contribuí al desarrollo de Conti Móvil, la principal app de banca móvil de Paraguay, y de Continental Banca Empresas para clientes corporativos. Entregué nuevas funcionalidades y resolví incidencias de front-end bajo metodología Scrum.",
       project2Impact: "+500K Usuarios",

@@ -40,7 +40,7 @@ const screens: ScreensTranslations = {
       project1ImpactLabel: "Scale & Impact",
       project1Role: "React Native Developer Sr.",
       project2Alt: "Conti Móvil Banking App",
-      project2Title: "Conti Móvil — Banco Continental",
+      project2Title: "Conti Móvil: Banco Continental",
       project2Desc:
         "Contributed to the development of Conti Móvil, Paraguay's leading mobile banking app, and Continental Banca Empresas for corporate clients. Shipped new features and resolved front-end issues under Scrum methodology.",
       project2Impact: "500K+ Users",
@@ -187,8 +187,7 @@ const screens: ScreensTranslations = {
         "Managed and enhanced the core web system of a radiology clinic.",
       role3Item2:
         "Built modules for patient management, billing, and role-based access control.",
-      role3Item3:
-        "Tech stack: Laravel, Vue.js, Express.js, HTML5, MySQL, PHP.",
+      role3Item3: "Tech stack: Laravel, Vue.js, Express.js, HTML5, MySQL, PHP.",
       period4: "2019 — 2021",
       company4: "Sercicronos",
       years4: "2 Years",
