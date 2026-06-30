@@ -17,6 +17,12 @@ const ogLocaleMap: Record<Locale, string> = {
   de: "de_DE",
 };
 
+const hrefLangMap: Record<Locale, string> = {
+  en: "en-US",
+  es: "es",
+  de: "de-DE",
+};
+
 export const generateMetadata = async ({
   params,
 }: {
@@ -41,17 +47,29 @@ export const generateMetadata = async ({
       siteName: "David Gómez Portfolio",
       title: dict.metadata.contactTitle,
       description: dict.metadata.contactDescription,
+      images: [
+        {
+          url: `${SITE_URL}/${locale}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: "David Gómez — Senior Fullstack Mobile & Web Developer",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: dict.metadata.contactTitle,
       description: dict.metadata.contactDescription,
+      images: [`${SITE_URL}/${locale}/opengraph-image`],
     },
     alternates: {
       canonical: `${SITE_URL}/${locale}/contact`,
-      languages: Object.fromEntries(
-        locales.map((l) => [ogLocaleMap[l], `${SITE_URL}/${l}/contact`])
-      ),
+      languages: {
+        ...Object.fromEntries(
+          locales.map((l) => [hrefLangMap[l], `${SITE_URL}/${l}/contact`])
+        ),
+        "x-default": `${SITE_URL}/en/contact`,
+      },
     },
   };
 };

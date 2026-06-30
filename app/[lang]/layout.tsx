@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import {
+  defaultLocale,
   getDictionary,
   hasLocale,
   locales,
@@ -17,6 +18,12 @@ const ogLocaleMap: Record<Locale, string> = {
   en: "en_US",
   es: "es_PY",
   de: "de_DE",
+};
+
+const hrefLangMap: Record<Locale, string> = {
+  en: "en-US",
+  es: "es",
+  de: "de-DE",
 };
 
 const inter = Inter({
@@ -74,12 +81,16 @@ export const generateMetadata = async ({
       card: "summary_large_image",
       title: dict.metadata.homeTitle,
       description: dict.metadata.homeDescription,
+      images: [`${SITE_URL}/${locale}/opengraph-image`],
     },
     alternates: {
       canonical: `${SITE_URL}/${locale}`,
-      languages: Object.fromEntries(
-        locales.map((l) => [ogLocaleMap[l], `${SITE_URL}/${l}`])
-      ),
+      languages: {
+        ...Object.fromEntries(
+          locales.map((l) => [hrefLangMap[l], `${SITE_URL}/${l}`])
+        ),
+        "x-default": `${SITE_URL}/${defaultLocale}`,
+      },
     },
     referrer: "origin-when-cross-origin",
     formatDetection: {
@@ -101,6 +112,21 @@ const RootLayout = async ({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang as Locale);
+  const locale = lang as Locale;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "David Gómez",
+    url: `${SITE_URL}/${locale}`,
+    jobTitle: "Senior Fullstack Mobile & Web Developer",
+    sameAs: [
+      "https://www.linkedin.com/in/davegzarca/",
+      "https://github.com/Dave-Gom",
+      "https://www.instagram.com/davegzarca/",
+    ],
+    knowsAbout: ["React Native", "TypeScript", "Node.js", "Fintech"],
+  };
 
   return (
     <html lang={lang} className={`${inter.variable} scroll-smooth`}>
@@ -109,12 +135,16 @@ const RootLayout = async ({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body
         className="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-white font-body"
         cz-shortcut-listen="true"
       >
-        <Navbar lang={lang as Locale} labels={dict.navbar} />
+        <Navbar lang={locale} labels={dict.navbar} />
         {children}
         <Footer labels={dict.footer} />
       </body>
