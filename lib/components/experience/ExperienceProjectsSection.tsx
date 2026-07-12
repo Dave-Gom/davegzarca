@@ -15,6 +15,24 @@ const ExperienceProjectsSection = ({ t }: ExperienceProjectsSectionProps) => {
       <div className="space-y-32">
         <ProjectCard
           images={[
+            "/assets/images/projects/ploutos/P1-Dashboard.jpg",
+            "/assets/images/projects/ploutos/P2-Dashboard-scroll.jpg",
+            "/assets/images/projects/ploutos/P3-Statistics.jpg",
+            "/assets/images/projects/ploutos/P4-Categories.jpg",
+            "/assets/images/projects/ploutos/P5-Transactions.jpg",
+            "/assets/images/projects/ploutos/P6-Settings.jpg",
+          ]}
+          imageAlt={t.project3Alt}
+          tags={["React Native", "Expo", "SQLite", "Firebase"]}
+          title={t.project3Title}
+          description={t.project3Desc}
+          impact={t.project3Impact}
+          impactLabel={t.project3ImpactLabel}
+          icon="monitoring"
+          role={t.project3Role}
+        />
+        <ProjectCard
+          images={[
             "/assets/images/projects/mango/image.png",
             "/assets/images/projects/mango/image2.png",
             "/assets/images/projects/mango/image3.png",
@@ -30,6 +48,7 @@ const ExperienceProjectsSection = ({ t }: ExperienceProjectsSectionProps) => {
           impactLabel={t.project1ImpactLabel}
           icon="verified"
           role={t.project1Role}
+          imagePosition="right"
         />
         <ProjectCard
           images={[
@@ -49,7 +68,6 @@ const ExperienceProjectsSection = ({ t }: ExperienceProjectsSectionProps) => {
           impactLabel={t.project2ImpactLabel}
           icon="architecture"
           role={t.project2Role}
-          imagePosition="right"
         />
       </div>
     </div>

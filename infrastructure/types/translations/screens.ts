@@ -166,7 +166,14 @@ export type ExperienceHeaderTranslations = {
   description: string;
 };
 
-export type ExperienceProjectsSectionTranslations = ProjectsSectionTranslations;
+export type ExperienceProjectsSectionTranslations = ProjectsSectionTranslations & {
+  project3Alt: string;
+  project3Title: string;
+  project3Desc: string;
+  project3Impact: string;
+  project3ImpactLabel: string;
+  project3Role: string;
+};
 
 export type ExperienceTimelineTranslations = {
   current: string;

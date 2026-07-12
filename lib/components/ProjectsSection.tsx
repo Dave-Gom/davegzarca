@@ -17,6 +17,24 @@ const ProjectsSection = ({ t, className = "py-32 bg-surface" }: ProjectsSectionP
         <div className="space-y-32">
           <ProjectCard
             images={[
+              "/assets/images/projects/ploutos/P1-Dashboard.jpg",
+              "/assets/images/projects/ploutos/P2-Dashboard-scroll.jpg",
+              "/assets/images/projects/ploutos/P3-Statistics.jpg",
+              "/assets/images/projects/ploutos/P4-Categories.jpg",
+              "/assets/images/projects/ploutos/P5-Transactions.jpg",
+              "/assets/images/projects/ploutos/P6-Settings.jpg",
+            ]}
+            imageAlt={t.project1Alt}
+            tags={["React Native", "Expo", "SQLite", "Firebase"]}
+            title={t.project1Title}
+            description={t.project1Desc}
+            impact={t.project1Impact}
+            impactLabel={t.project1ImpactLabel}
+            icon="monitoring"
+            role={t.project1Role}
+          />
+          <ProjectCard
+            images={[
               "/assets/images/projects/mango/image.png",
               "/assets/images/projects/mango/image2.png",
               "/assets/images/projects/mango/image3.png",
@@ -24,32 +42,13 @@ const ProjectsSection = ({ t, className = "py-32 bg-surface" }: ProjectsSectionP
               "/assets/images/projects/mango/image5.png",
               "/assets/images/projects/mango/image6.png",
             ]}
-            imageAlt={t.project1Alt}
-            tags={["React Native", "UIKit", "Kotlin"]}
-            title={t.project1Title}
-            description={t.project1Desc}
-            impact={t.project1Impact}
-            impactLabel={t.project1ImpactLabel}
-            icon="verified"
-            role={t.project1Role}
-          />
-          <ProjectCard
-            images={[
-              "/assets/images/projects/contimovil/image.png",
-              "/assets/images/projects/contimovil/image2.png",
-              "/assets/images/projects/contimovil/image3.png",
-              "/assets/images/projects/contimovil/image4.png",
-              "/assets/images/projects/contimovil/image5.png",
-              "/assets/images/projects/contimovil/image6.png",
-              "/assets/images/projects/contimovil/image7.png",
-            ]}
             imageAlt={t.project2Alt}
-            tags={["React Native", "Firebase", "UIKit"]}
+            tags={["React Native", "UIKit", "Kotlin"]}
             title={t.project2Title}
             description={t.project2Desc}
             impact={t.project2Impact}
             impactLabel={t.project2ImpactLabel}
-            icon="architecture"
+            icon="verified"
             role={t.project2Role}
             imagePosition="right"
           />
