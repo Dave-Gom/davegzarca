@@ -158,6 +158,26 @@ const screens: ScreensTranslations = {
       description:
         "Over 6 years building high-impact mobile and web products across finance, healthcare, and sports. From banking apps with 450K users to a fintech wallet with over 1 million.",
     },
+    projects: {
+      worksLabel: "Published Projects",
+      worksTitle: "Impact-Driven Engineering",
+      project1Alt: "Billetera Mango Fintech App",
+      project1Title: "Billetera Mango",
+      project1Desc:
+        "React Native developer for one of Paraguay's most used fintech apps. Developing and maintaining high-quality features for an electronic wallet with over 1 million active users, with a strong focus on performance and scalability.",
+      project1Impact: "1M+ Active Users",
+      project1ImpactLabel: "Scale & Impact",
+      project1Role: "React Native Developer Sr.",
+      project2Alt: "Conti Móvil Banking App",
+      project2Title: "Conti Móvil: Banco Continental",
+      project2Desc:
+        "Contributed to the development of Conti Móvil, Paraguay's leading mobile banking app, and Continental Banca Empresas for corporate clients. Shipped new features and resolved front-end issues under Scrum methodology.",
+      project2Impact: "500K+ Users",
+      project2ImpactLabel: "National Banking Scale",
+      project2Role: "React Native Developer",
+    },
+    timelineSectionLabel: "Career History",
+    timelineSectionTitle: "Timeline",
     timeline: {
       current: "Current",
       years3: "2 Years",

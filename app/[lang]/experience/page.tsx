@@ -1,14 +1,16 @@
-import { notFound } from "next/navigation";
 import type { Locale } from "@/infrastructure/types";
+import ExperienceCta from "@/lib/components/experience/ExperienceCta";
+import ExperienceHeader from "@/lib/components/experience/ExperienceHeader";
+import ExperienceProjectsSection from "@/lib/components/experience/ExperienceProjectsSection";
+import ExperienceTimeline from "@/lib/components/experience/ExperienceTimeline";
+import SectionHeader from "@/lib/components/SectionHeader";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import {
   getDictionary,
   hasLocale,
   locales,
 } from "../../../infrastructure/translations/dictionaries";
-import ExperienceHeader from "@/lib/components/experience/ExperienceHeader";
-import ExperienceTimeline from "@/lib/components/experience/ExperienceTimeline";
-import ExperienceCta from "@/lib/components/experience/ExperienceCta";
-import type { Metadata } from "next";
 
 const SITE_URL = "https://davegzarca.dev";
 
@@ -67,7 +69,7 @@ export const generateMetadata = async ({
       canonical: `${SITE_URL}/${locale}/experience`,
       languages: {
         ...Object.fromEntries(
-          locales.map((l) => [hrefLangMap[l], `${SITE_URL}/${l}/experience`])
+          locales.map((l) => [hrefLangMap[l], `${SITE_URL}/${l}/experience`]),
         ),
         "x-default": `${SITE_URL}/en/experience`,
       },
@@ -88,8 +90,19 @@ const ExperiencePage = async ({
   return (
     <main className="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
       <ExperienceHeader t={t.header} />
+      <ExperienceProjectsSection t={t.projects} />
+      <div className="mb-20">
+        <SectionHeader
+          label={t.timelineSectionLabel}
+          title={t.timelineSectionTitle}
+        />
+      </div>
       <ExperienceTimeline t={t.timeline} />
-      <ExperienceCta t={t.cta} lang={lang} resumeFile={dict.navbar.resumeFile} />
+      <ExperienceCta
+        t={t.cta}
+        lang={lang}
+        resumeFile={dict.navbar.resumeFile}
+      />
     </main>
   );
 };

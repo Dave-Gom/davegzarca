@@ -166,6 +166,8 @@ export type ExperienceHeaderTranslations = {
   description: string;
 };
 
+export type ExperienceProjectsSectionTranslations = ProjectsSectionTranslations;
+
 export type ExperienceTimelineTranslations = {
   current: string;
   years3: string;
@@ -213,6 +215,9 @@ export type ExperienceCtaTranslations = {
 
 export type ExperienceTranslations = {
   header: ExperienceHeaderTranslations;
+  projects: ExperienceProjectsSectionTranslations;
+  timelineSectionLabel: string;
+  timelineSectionTitle: string;
   timeline: ExperienceTimelineTranslations;
   cta: ExperienceCtaTranslations;
 };

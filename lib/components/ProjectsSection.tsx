@@ -4,11 +4,12 @@ import SectionHeader from "./SectionHeader";
 
 interface ProjectsSectionProps {
   t: ProjectsSectionTranslations;
+  className?: string;
 }
 
-const ProjectsSection = ({ t }: ProjectsSectionProps) => {
+const ProjectsSection = ({ t, className = "py-32 bg-surface" }: ProjectsSectionProps) => {
   return (
-    <section className="py-32 bg-surface" id="projects">
+    <section className={className} id="projects">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex justify-between items-end mb-16">
           <SectionHeader label={t.worksLabel} title={t.worksTitle} />
@@ -16,12 +17,12 @@ const ProjectsSection = ({ t }: ProjectsSectionProps) => {
         <div className="space-y-32">
           <ProjectCard
             images={[
-              "assets/images/projects/mango/image.png",
-              "assets/images/projects/mango/image2.png",
-              "assets/images/projects/mango/image3.png",
-              "assets/images/projects/mango/image4.png",
-              "assets/images/projects/mango/image5.png",
-              "assets/images/projects/mango/image6.png",
+              "/assets/images/projects/mango/image.png",
+              "/assets/images/projects/mango/image2.png",
+              "/assets/images/projects/mango/image3.png",
+              "/assets/images/projects/mango/image4.png",
+              "/assets/images/projects/mango/image5.png",
+              "/assets/images/projects/mango/image6.png",
             ]}
             imageAlt={t.project1Alt}
             tags={["React Native", "UIKit", "Kotlin"]}
@@ -34,13 +35,13 @@ const ProjectsSection = ({ t }: ProjectsSectionProps) => {
           />
           <ProjectCard
             images={[
-              "assets/images/projects/contimovil/image.png",
-              "assets/images/projects/contimovil/image2.png",
-              "assets/images/projects/contimovil/image3.png",
-              "assets/images/projects/contimovil/image4.png",
-              "assets/images/projects/contimovil/image5.png",
-              "assets/images/projects/contimovil/image6.png",
-              "assets/images/projects/contimovil/image7.png",
+              "/assets/images/projects/contimovil/image.png",
+              "/assets/images/projects/contimovil/image2.png",
+              "/assets/images/projects/contimovil/image3.png",
+              "/assets/images/projects/contimovil/image4.png",
+              "/assets/images/projects/contimovil/image5.png",
+              "/assets/images/projects/contimovil/image6.png",
+              "/assets/images/projects/contimovil/image7.png",
             ]}
             imageAlt={t.project2Alt}
             tags={["React Native", "Firebase", "UIKit"]}
