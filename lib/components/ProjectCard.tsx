@@ -119,7 +119,7 @@ const ProjectCard = ({
         <p className="text-on-surface-variant text-lg leading-relaxed">
           {description}
         </p>
-        <div className="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary">
+        <div className="bg-surface-container-low p-6 rounded-lg">
           <p className="text-primary font-bold text-xl">{impact}</p>
           <p className="text-secondary text-sm font-medium uppercase mt-1">
             {impactLabel}
