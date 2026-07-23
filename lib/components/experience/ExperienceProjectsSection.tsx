@@ -30,6 +30,7 @@ const ExperienceProjectsSection = ({ t }: ExperienceProjectsSectionProps) => {
           impactLabel={t.project3ImpactLabel}
           icon="monitoring"
           role={t.project3Role}
+          url="https://www.ploutosapp.com.py/"
         />
         <ProjectCard
           images={[
@@ -49,6 +50,44 @@ const ExperienceProjectsSection = ({ t }: ExperienceProjectsSectionProps) => {
           icon="verified"
           role={t.project1Role}
           imagePosition="right"
+          url="https://mangoapp.com.py/"
+        />
+        <ProjectCard
+          images={[
+            "/assets/images/projects/Padelsys/Padelsys1.webp",
+            "/assets/images/projects/Padelsys/Padelsys2.webp",
+            "/assets/images/projects/Padelsys/Padelsys3.webp",
+            "/assets/images/projects/Padelsys/Padelsys4.webp",
+            "/assets/images/projects/Padelsys/Padelsys5.webp",
+          ]}
+          imageAlt={t.project5Alt}
+          tags={["PHP", "JavaScript", "MySQL", "Bootstrap", "Product Owner"]}
+          title={t.project5Title}
+          description={t.project5Desc}
+          impact={t.project5Impact}
+          impactLabel={t.project5ImpactLabel}
+          icon="emoji_events"
+          role={t.project5Role}
+          url="https://www.padelsys.com/"
+        />
+        <ProjectCard
+          images={[
+            "/assets/images/projects/ContiEmpresas/ContiEmpresas1.webp",
+            "/assets/images/projects/ContiEmpresas/ContiEmpresas2.webp",
+            "/assets/images/projects/ContiEmpresas/ContiEmpresas3.webp",
+            "/assets/images/projects/ContiEmpresas/ContiEmpresas4.webp",
+            "/assets/images/projects/ContiEmpresas/ContiEmpresas5.webp",
+          ]}
+          imageAlt={t.project4Alt}
+          tags={["React Native", "Firebase", "UIKit"]}
+          title={t.project4Title}
+          description={t.project4Desc}
+          impact={t.project4Impact}
+          impactLabel={t.project4ImpactLabel}
+          icon="account_balance"
+          role={t.project4Role}
+          imagePosition="right"
+          url="https://play.google.com/store/apps/details?id=py.com.konecta.continental&hl=es_419"
         />
         <ProjectCard
           images={[
@@ -68,6 +107,7 @@ const ExperienceProjectsSection = ({ t }: ExperienceProjectsSectionProps) => {
           impactLabel={t.project2ImpactLabel}
           icon="architecture"
           role={t.project2Role}
+          url="https://www.bancontinental.com.py/home/mobileBanking/"
         />
       </div>
     </div>

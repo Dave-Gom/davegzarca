@@ -13,6 +13,7 @@ interface ProjectCardProps {
   icon: string;
   role: string;
   imagePosition?: "left" | "right";
+  url?: string;
 }
 
 const ProjectCard = ({
@@ -26,6 +27,7 @@ const ProjectCard = ({
   icon,
   role,
   imagePosition = "left",
+  url,
 }: ProjectCardProps) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -114,7 +116,18 @@ const ProjectCard = ({
           ))}
         </div>
         <h4 className="text-3xl font-bold text-primary tracking-tight">
-          {title}
+          {url ? (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline decoration-2 underline-offset-4"
+            >
+              {title}
+            </a>
+          ) : (
+            title
+          )}
         </h4>
         <p className="text-on-surface-variant text-lg leading-relaxed">
           {description}

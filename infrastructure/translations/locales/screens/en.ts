@@ -75,9 +75,9 @@ const screens: ScreensTranslations = {
       role4Desc:
         "Started my career as a Junior Developer at Sercicronos, a marathon and running event management platform.",
       role5Period: "2024 — Pres.",
-      role5Title: "Freelance Developer — PadelSys",
+      role5Title: "Mobile & Frontend Developer — PadelSys",
       role5Desc:
-        "Sole developer of PadelSys, a padel tournament management platform used across Paraguay. Built the web app and contributed to the mobile app for tournament creation, player registration, bracket generation, and analytics.",
+        "Mobile Frontend Developer for PadelSys, a padel tournament management platform used across Paraguay. Working in close collaboration with the product stakeholder, taking on the Product Owner role, for the development of the mobile app: tournament creation, player registration, bracket generation, and analytics.",
     },
     skillsSection: {
       skillsLabel: "Core Competencies",
@@ -131,7 +131,7 @@ const screens: ScreensTranslations = {
         label: "Freelance",
         title: "End-to-End Solo Projects",
         description:
-          "I develop and maintain PadelSys, a padel tournament platform used across Paraguay, handling architecture, database, frontend, and deployment. I also built the Realtec landing page as an independent project, negotiating scope directly with the client.",
+          "Mobile & Frontend Developer for PadelSys, a padel tournament platform used across Paraguay, working closely with the product stakeholder. I also built the Realtec landing page as an independent project, negotiating scope directly with the client.",
         stars: "1K+ Users Served",
       },
       speakingCard: {
@@ -182,6 +182,20 @@ const screens: ScreensTranslations = {
       project3Impact: "React Native",
       project3ImpactLabel: "End-to-End Solo Build",
       project3Role: "Sole Developer",
+      project4Alt: "Continental Banca Empresas Banking App",
+      project4Title: "Continental Banca Empresas",
+      project4Desc:
+        "Contributed to the development of Continental Banca Empresas, Banco Continental's corporate banking app, as part of the bank's mobile team. Shipped new features and resolved issues for corporate account management, transfers, salary payments, service payments, and operation authorizations under Scrum methodology.",
+      project4Impact: "Banco Continental",
+      project4ImpactLabel: "National Corporate Banking",
+      project4Role: "React Native Developer",
+      project5Alt: "PadelSys Padel Tournament Platform",
+      project5Title: "PadelSys",
+      project5Desc:
+        "Mobile Frontend Developer for PadelSys, a comprehensive padel tournament management and club administration platform used across Paraguay. Working in close collaboration with the product stakeholder, taking on the Product Owner role, for the development of the mobile app: tournament creation, player registration, automatic bracket generation, circuit rankings, online reservations, and analytics.",
+      project5Impact: "1K+ Users",
+      project5ImpactLabel: "National Padel Platform",
+      project5Role: "Mobile & Frontend Developer · Freelance",
     },
     timelineSectionLabel: "Career History",
     timelineSectionTitle: "Timeline",
@@ -227,9 +241,9 @@ const screens: ScreensTranslations = {
       period5: "2024 — PRESENT",
       company5: "PadelSys",
       years5: "Freelance",
-      role5: "Sole Developer",
+      role5: "Mobile & Frontend Developer",
       role5Item1:
-        "Built a padel tournament management platform used across Paraguay.",
+        "Mobile Frontend Developer for a padel tournament management platform used across Paraguay, taking on the Product Owner role in close collaboration with the product stakeholder.",
       role5Item2:
         "Developed tournament creation, player registration, bracket generation, and analytics features.",
       role5Item3:

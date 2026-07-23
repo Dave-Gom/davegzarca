@@ -32,6 +32,7 @@ const ProjectsSection = ({ t, className = "py-32 bg-surface" }: ProjectsSectionP
             impactLabel={t.project1ImpactLabel}
             icon="monitoring"
             role={t.project1Role}
+            url="https://www.ploutosapp.com.py/"
           />
           <ProjectCard
             images={[
@@ -51,6 +52,7 @@ const ProjectsSection = ({ t, className = "py-32 bg-surface" }: ProjectsSectionP
             icon="verified"
             role={t.project2Role}
             imagePosition="right"
+            url="https://mangoapp.com.py/"
           />
         </div>
       </div>

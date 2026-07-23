@@ -173,6 +173,18 @@ export type ExperienceProjectsSectionTranslations = ProjectsSectionTranslations 
   project3Impact: string;
   project3ImpactLabel: string;
   project3Role: string;
+  project4Alt: string;
+  project4Title: string;
+  project4Desc: string;
+  project4Impact: string;
+  project4ImpactLabel: string;
+  project4Role: string;
+  project5Alt: string;
+  project5Title: string;
+  project5Desc: string;
+  project5Impact: string;
+  project5ImpactLabel: string;
+  project5Role: string;
 };
 
 export type ExperienceTimelineTranslations = {

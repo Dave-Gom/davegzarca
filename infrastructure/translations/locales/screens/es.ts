@@ -75,9 +75,9 @@ const screens: ScreensTranslations = {
       role4Desc:
         "Inicié mi carrera como Desarrollador Junior en Sercicronos, plataforma de gestión de eventos de maratones y carreras.",
       role5Period: "2024 — Actual",
-      role5Title: "Desarrollador Freelance — PadelSys",
+      role5Title: "Mobile & Frontend Developer — PadelSys",
       role5Desc:
-        "Único desarrollador de PadelSys, una plataforma de gestión de torneos de pádel utilizada en Paraguay. Desarrollo de la app web y contribución a la app móvil para creación de torneos, inscripción de jugadores, generación de llaves y analíticas.",
+        "Desarrollador Mobile Frontend de PadelSys, plataforma de gestión de torneos de pádel utilizada en Paraguay. Trabajo en estrecha colaboración con el stakeholder del producto, asumiendo el rol de Product Owner, en el desarrollo de la app móvil: creación de torneos, inscripción de jugadores, generación de llaves y analíticas.",
     },
     skillsSection: {
       skillsLabel: "Competencias clave",
@@ -131,7 +131,7 @@ const screens: ScreensTranslations = {
         label: "Freelance",
         title: "Ownership de Ciclo Completo",
         description:
-          "Desarrollo y mantengo PadelSys, una plataforma de torneos de pádel utilizada en todo Paraguay, manejando arquitectura, base de datos, frontend y despliegue. También construí la landing page de Realtec como proyecto independiente, negociando alcances directamente con el cliente.",
+          "Desarrollador Mobile & Frontend de PadelSys, plataforma de torneos de pádel utilizada en todo Paraguay, colaborando estrechamente con el stakeholder del producto. También construí la landing page de Realtec como proyecto independiente, negociando alcances directamente con el cliente.",
         stars: "+1K Usuarios servidos",
       },
       speakingCard: {
@@ -182,6 +182,20 @@ const screens: ScreensTranslations = {
       project3Impact: "React Native",
       project3ImpactLabel: "Proyecto personal integral",
       project3Role: "Único Desarrollador",
+      project4Alt: "App bancaria Continental Banca Empresas",
+      project4Title: "Continental Banca Empresas",
+      project4Desc:
+        "Contribuí al desarrollo de Continental Banca Empresas, la app bancaria para clientes corporativos del Banco Continental, formando parte del equipo mobile del banco. Entregué nuevas funcionalidades y resolví incidencias para gestión de cuentas empresariales, transferencias, pago de salarios, pago de servicios y autorizaciones de operaciones bajo metodología Scrum.",
+      project4Impact: "Banco Continental",
+      project4ImpactLabel: "Banca Corporativa Nacional",
+      project4Role: "React Native Developer",
+      project5Alt: "Plataforma de torneos de pádel PadelSys",
+      project5Title: "PadelSys",
+      project5Desc:
+        "Desarrollador Mobile Frontend de PadelSys, plataforma integral de gestión de torneos y administración de complejos de pádel utilizada en todo Paraguay. Trabajo en estrecha colaboración con el stakeholder del producto, asumiendo el rol de Product Owner, en el desarrollo de la app móvil: creación de torneos, inscripción de jugadores, generación de llaves automáticas, ranking por circuitos, reservas online y analíticas.",
+      project5Impact: "+1K Usuarios",
+      project5ImpactLabel: "Plataforma Nacional de Pádel",
+      project5Role: "Mobile & Frontend Developer · Freelance",
     },
     timelineSectionLabel: "Trayectoria profesional",
     timelineSectionTitle: "Línea de tiempo",
@@ -227,9 +241,9 @@ const screens: ScreensTranslations = {
       period5: "2024 — ACTUAL",
       company5: "PadelSys",
       years5: "Freelance",
-      role5: "Único Desarrollador",
+      role5: "Mobile & Frontend Developer",
       role5Item1:
-        "Desarrollo de una plataforma de gestión de torneos de pádel utilizada en todo Paraguay.",
+        "Desarrollador Mobile Frontend de una plataforma de gestión de torneos de pádel, asumiendo el rol de Product Owner en estrecha colaboración con el stakeholder del producto.",
       role5Item2:
         "Creación de torneos, inscripción de jugadores, generación de llaves y funcionalidades de analíticas.",
       role5Item3: "Stack: PHP, JavaScript, jQuery, Bootstrap, Chart.js, MySQL.",
