@@ -238,6 +238,16 @@ const screens: ScreensTranslations = {
       role4Item2:
         "Construcción de funcionalidades para inscripción de eventos, sistemas de cronometraje y publicación de resultados.",
       role4Item3: "Stack: HTML5, CSS3, JavaScript, PHP, MySQL.",
+      period6: "2026 — ACTUAL",
+      company6: "Ploutos",
+      years6: "Proyecto Personal",
+      role6: "Único Desarrollador",
+      role6Item1:
+        "Diseño y desarrollo de una app de finanzas personales multiplataforma con React Native y Expo SDK 54, ejecutándose nativamente en iOS y Android.",
+      role6Item2:
+        "Arquitectura offline-first con SQLite cifrado, soporte multi-divisa con tasas en tiempo real, categorías jerárquicas, estadísticas y gráficos.",
+      role6Item3:
+        "Integración con Firebase Analytics, Crashlytics y Remote Config. Importación de datos desde Mobills.",
       period5: "2024 — ACTUAL",
       company5: "PadelSys",
       years5: "Freelance",

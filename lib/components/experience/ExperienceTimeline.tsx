@@ -11,6 +11,19 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
       <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant/30 transform md:-translate-x-1/2 hidden md:block"></div>
 
       <TimelineItem
+        period={t.period6}
+        company={t.company6}
+        badge={t.years6}
+        role={t.role6}
+        items={[
+          { icon: "smartphone", text: t.role6Item1 },
+          { icon: "savings", text: t.role6Item2 },
+          { icon: "analytics", text: t.role6Item3 },
+        ]}
+        position="left"
+      />
+
+      <TimelineItem
         period={t.period1}
         company={t.company1}
         badge={t.current}
@@ -21,7 +34,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "speed", text: t.role1Item2 },
           { icon: "groups", text: t.role1Item3 },
         ]}
-        position="left"
+        position="right"
       />
 
       <TimelineItem
@@ -34,7 +47,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "leaderboard", text: t.role5Item2 },
           { icon: "layers", text: t.role5Item3 },
         ]}
-        position="right"
+        position="left"
       />
 
       <TimelineItem
@@ -47,7 +60,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "star", text: t.role2Item2 },
           { icon: "monitoring", text: t.role2Item3 },
         ]}
-        position="left"
+        position="right"
       />
 
       <TimelineItem
@@ -60,7 +73,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "database", text: t.role3Item2 },
           { icon: "layers", text: t.role3Item3 },
         ]}
-        position="right"
+        position="left"
       />
 
       <TimelineItem
@@ -73,7 +86,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "timer", text: t.role4Item2 },
           { icon: "layers", text: t.role4Item3 },
         ]}
-        position="left"
+        position="right"
         isLast
       />
     </div>

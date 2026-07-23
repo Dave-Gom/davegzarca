@@ -223,6 +223,13 @@ export type ExperienceTimelineTranslations = {
   role5Item1: string;
   role5Item2: string;
   role5Item3: string;
+  period6: string;
+  company6: string;
+  years6: string;
+  role6: string;
+  role6Item1: string;
+  role6Item2: string;
+  role6Item3: string;
 };
 
 export type ExperienceCtaTranslations = {

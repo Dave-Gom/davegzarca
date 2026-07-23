@@ -238,6 +238,16 @@ const screens: ScreensTranslations = {
       role4Item2:
         "Built features for event registration, timing systems, and results publishing.",
       role4Item3: "Tech stack: HTML5, CSS3, JavaScript, PHP, MySQL.",
+      period6: "2026 — PRESENT",
+      company6: "Ploutos",
+      years6: "Personal Project",
+      role6: "Sole Developer",
+      role6Item1:
+        "Designed and built a cross-platform personal finance app with React Native and Expo SDK 54, running natively on iOS and Android.",
+      role6Item2:
+        "Offline-first architecture with encrypted SQLite, multi-currency support with live exchange rates, hierarchical categories, statistics with charts.",
+      role6Item3:
+        "Integrated with Firebase Analytics, Crashlytics, and Remote Config. Mobills data import support.",
       period5: "2024 — PRESENT",
       company5: "PadelSys",
       years5: "Freelance",
