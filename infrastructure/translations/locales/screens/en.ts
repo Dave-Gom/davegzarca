@@ -26,7 +26,7 @@ const screens: ScreensTranslations = {
         "I serve as the bridge between technical execution and business goals from architecture decisions and state management to API design and team coordination always focused on delivering solutions that stand up at scale.",
       yearsCount: "6+",
       yearsLabel: "Years of Experience",
-      appsCount: "4",
+      appsCount: "5",
       appsLabel: "Published Apps",
     },
     projectsSection: {
@@ -42,8 +42,8 @@ const screens: ScreensTranslations = {
       project2Alt: "Billetera Mango Fintech App",
       project2Title: "Billetera Mango",
       project2Desc:
-        "React Native developer for one of Paraguay's most used fintech apps. Developing and maintaining high-quality features for an electronic wallet with over 1 million active users, with a strong focus on performance and scalability.",
-      project2Impact: "1M+ Active Users",
+        "React Native developer for one of Paraguay's most used fintech apps. Developing and maintaining high-quality features for an electronic wallet with over 2 million active users, with a strong focus on performance and scalability.",
+      project2Impact: "2M+ Active Users",
       project2ImpactLabel: "Scale & Impact",
       project2Role: "React Native Developer Sr.",
     },
@@ -55,7 +55,7 @@ const screens: ScreensTranslations = {
       role1Desc:
         "Developing and maintaining new features for Paraguay's leading electronic wallet. Collaborating within a team focused on high-quality UX, performance optimization, and scalability.",
       role1Item1:
-        "Contributing to a platform serving over 1 million active users.",
+        "Contributing to a platform serving over 2 million active users.",
       role1Item2:
         "Focused on performance, code quality, and scalable architecture with React Native, TypeScript, Redux, Sentry, OneSignal, and Rive.",
       role2Period: "2022 — 2024",
@@ -145,7 +145,7 @@ const screens: ScreensTranslations = {
         appearance1: "PadelSys",
         appearance1Detail: "Padel Tournaments",
         appearance2: "Billetera Mango",
-        appearance2Detail: "Fintech · 1M+ Users",
+        appearance2Detail: "Fintech · 2M+ Users",
         appearance3: "Conti Móvil",
         appearance3Detail: "Banking · 450K+ Users",
       },
@@ -156,7 +156,7 @@ const screens: ScreensTranslations = {
       subtitle: "Professional History",
       title: "Experience",
       description:
-        "Over 6 years building high-impact mobile and web products across finance, healthcare, and sports. From banking apps with 450K users to a fintech wallet with over 1 million.",
+        "Over 6 years building high-impact mobile and web products across finance, healthcare, and sports. From banking apps with 450K users to a fintech wallet with over 2 million.",
     },
     projects: {
       worksLabel: "Published Projects",
@@ -164,8 +164,8 @@ const screens: ScreensTranslations = {
       project1Alt: "Billetera Mango Fintech App",
       project1Title: "Billetera Mango",
       project1Desc:
-        "React Native developer for one of Paraguay's most used fintech apps. Developing and maintaining high-quality features for an electronic wallet with over 1 million active users, with a strong focus on performance and scalability.",
-      project1Impact: "1M+ Active Users",
+        "React Native developer for one of Paraguay's most used fintech apps. Developing and maintaining high-quality features for an electronic wallet with over 2 million active users, with a strong focus on performance and scalability.",
+      project1Impact: "2M+ Active Users",
       project1ImpactLabel: "Scale & Impact",
       project1Role: "React Native Developer Sr.",
       project2Alt: "Conti Móvil Banking App",
@@ -207,7 +207,7 @@ const screens: ScreensTranslations = {
       company1: "Billetera Mango",
       role1: "React Native Developer Sr.",
       role1Item1:
-        "Developing and maintaining new features for an electronic wallet with over 1 million active users.",
+        "Developing and maintaining new features for an electronic wallet with over 2 million active users.",
       role1Item2:
         "Collaborating within a Scrum team to deliver high-quality UX with a focus on performance and scalability.",
       role1Item3:
@@ -279,7 +279,7 @@ const screens: ScreensTranslations = {
       },
       trustIndicator: {
         trustText:
-          "Worked on apps used by over 1.5 million people across Paraguay.",
+          "Worked on apps used by over 2 million people across Paraguay.",
       },
     },
   },

@@ -5,7 +5,7 @@ const common: CommonTranslations = {
     homeTitle:
       "David Gómez | Senior Fullstack Entwickler — React Native & Node.js",
     homeDescription:
-      "Senior Fullstack Entwickler mit über 6 Jahren Erfahrung in Fintech und Mobile Banking. Ich entwickle Apps mit React Native und Node.js für über 1,5 Millionen Nutzer.",
+      "Senior Fullstack Entwickler mit über 6 Jahren Erfahrung in Fintech und Mobile Banking. Ich entwickle Apps mit React Native und Node.js für über 2 Millionen Nutzer.",
     homeKeywords:
       "David Gómez, Senior Fullstack Entwickler, React Native, Node.js, TypeScript, Fintech, Mobile Banking, Paraguay",
 
@@ -17,7 +17,7 @@ const common: CommonTranslations = {
 
     experienceTitle: "Erfahrung | David Gómez — Fullstack Entwickler",
     experienceDescription:
-      "Von Banking-Apps mit über 450K Nutzern bis zu digitalen Wallets mit über 1M. React Native, TypeScript und Node.js in Fintech-Umgebungen mit hoher Wirkung.",
+      "Von Banking-Apps mit über 450K Nutzern bis zu digitalen Wallets mit über 2M. React Native, TypeScript und Node.js in Fintech-Umgebungen mit hoher Wirkung.",
     experienceKeywords:
       "React Native Erfahrung, Billetera Mango, Banco Continental, Fintech-Apps, Mobile Banking, Paraguay",
 

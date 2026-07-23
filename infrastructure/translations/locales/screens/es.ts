@@ -26,7 +26,7 @@ const screens: ScreensTranslations = {
         "Soy el puente entre la ejecución técnica y los objetivos de negocio desde decisiones de arquitectura y gestión de estado hasta diseño de APIs y coordinación de equipos siempre enfocado en entregar soluciones que resistan la escala.",
       yearsCount: "6+",
       yearsLabel: "Años de experiencia",
-      appsCount: "4",
+      appsCount: "5",
       appsLabel: "Apps publicadas",
     },
     projectsSection: {
@@ -42,8 +42,8 @@ const screens: ScreensTranslations = {
       project2Alt: "App Fintech Billetera Mango",
       project2Title: "Billetera Mango",
       project2Desc:
-        "Desarrollador React Native de una de las apps fintech más utilizadas de Paraguay. Desarrollo y mantenimiento de funcionalidades de alta calidad para una billetera electrónica con más de 1 millón de usuarios activos, con foco en rendimiento y escalabilidad.",
-      project2Impact: "+1M Usuarios Activos",
+        "Desarrollador React Native de una de las apps fintech más utilizadas de Paraguay. Desarrollo y mantenimiento de funcionalidades de alta calidad para una billetera electrónica con más de 2 millones de usuarios activos, con foco en rendimiento y escalabilidad.",
+      project2Impact: "+2M Usuarios Activos",
       project2ImpactLabel: "Escala e Impacto",
       project2Role: "React Native Developer Sr.",
     },
@@ -55,7 +55,7 @@ const screens: ScreensTranslations = {
       role1Desc:
         "Desarrollo y mantenimiento de nuevas funcionalidades para la principal billetera electrónica de Paraguay. Colaboración en un equipo enfocado en UX de alta calidad, optimización de rendimiento y escalabilidad.",
       role1Item1:
-        "Contribuyendo a una plataforma con más de 1 millón de usuarios activos.",
+        "Contribuyendo a una plataforma con más de 2 millones de usuarios activos.",
       role1Item2:
         "Enfocado en rendimiento, calidad de código y arquitectura escalable con React Native, TypeScript, Redux, Sentry, OneSignal y Rive.",
       role2Period: "2022 — 2024",
@@ -145,7 +145,7 @@ const screens: ScreensTranslations = {
         appearance1: "PadelSys",
         appearance1Detail: "Torneos de Pádel",
         appearance2: "Billetera Mango",
-        appearance2Detail: "Fintech · +1M Usuarios",
+        appearance2Detail: "Fintech · +2M Usuarios",
         appearance3: "Conti Móvil",
         appearance3Detail: "Banca · +450K Usuarios",
       },
@@ -156,7 +156,7 @@ const screens: ScreensTranslations = {
       subtitle: "Historial Profesional",
       title: "Experiencia",
       description:
-        "Más de 6 años construyendo productos móviles y web de alto impacto en los sectores financiero, salud y deportes desde apps bancarias con 450K usuarios hasta una billetera fintech con más de 1 millón.",
+        "Más de 6 años construyendo productos móviles y web de alto impacto en los sectores financiero, salud y deportes desde apps bancarias con 450K usuarios hasta una billetera fintech con más de 2 millones.",
     },
     projects: {
       worksLabel: "Proyectos publicados",
@@ -164,8 +164,8 @@ const screens: ScreensTranslations = {
       project1Alt: "App Fintech Billetera Mango",
       project1Title: "Billetera Mango",
       project1Desc:
-        "Desarrollador React Native de una de las apps fintech más utilizadas de Paraguay. Desarrollo y mantenimiento de funcionalidades de alta calidad para una billetera electrónica con más de 1 millón de usuarios activos, con foco en rendimiento y escalabilidad.",
-      project1Impact: "+1M Usuarios Activos",
+        "Desarrollador React Native de una de las apps fintech más utilizadas de Paraguay. Desarrollo y mantenimiento de funcionalidades de alta calidad para una billetera electrónica con más de 2 millones de usuarios activos, con foco en rendimiento y escalabilidad.",
+      project1Impact: "+2M Usuarios Activos",
       project1ImpactLabel: "Escala e Impacto",
       project1Role: "React Native Developer Sr.",
       project2Alt: "App bancaria Conti Móvil",
@@ -207,7 +207,7 @@ const screens: ScreensTranslations = {
       company1: "Billetera Mango",
       role1: "React Native Developer Sr.",
       role1Item1:
-        "Desarrollo y mantenimiento de nuevas funcionalidades para una billetera electrónica con más de 1 millón de usuarios activos.",
+        "Desarrollo y mantenimiento de nuevas funcionalidades para una billetera electrónica con más de 2 millones de usuarios activos.",
       role1Item2:
         "Colaboración en un equipo Scrum para entregar UX de alta calidad con foco en rendimiento y escalabilidad.",
       role1Item3:
@@ -278,7 +278,7 @@ const screens: ScreensTranslations = {
       },
       trustIndicator: {
         trustText:
-          "Trabajé en apps utilizadas por más de 1,5 millones de usuarios en Paraguay.",
+          "Trabajé en apps utilizadas por más de 2 millones de usuarios en Paraguay.",
       },
     },
   },

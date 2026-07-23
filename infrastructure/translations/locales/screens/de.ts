@@ -26,7 +26,7 @@ const screens: ScreensTranslations = {
         "Ich bin die Brücke zwischen technischer Umsetzung und Geschäftszielen von Architekturentscheidungen und State Management bis hin zu API-Design und Teamkoordination stets darauf ausgerichtet, Lösungen zu liefern, die auch im großen Maßstab Bestand haben.",
       yearsCount: "6+",
       yearsLabel: "Jahre Erfahrung",
-      appsCount: "4",
+      appsCount: "5",
       appsLabel: "Veröffentlichte Apps",
     },
     projectsSection: {
@@ -42,8 +42,8 @@ const screens: ScreensTranslations = {
       project2Alt: "Billetera Mango Fintech App",
       project2Title: "Billetera Mango",
       project2Desc:
-        "React Native Entwickler für eine der meistgenutzten Fintech-Apps Paraguays. Entwicklung und Wartung hochwertiger Features für eine elektronische Wallet mit über 1 Million aktiven Nutzern, mit starkem Fokus auf Performance und Skalierbarkeit.",
-      project2Impact: "1M+ Aktive Nutzer",
+        "React Native Entwickler für eine der meistgenutzten Fintech-Apps Paraguays. Entwicklung und Wartung hochwertiger Features für eine elektronische Wallet mit über 2 Millionen aktiven Nutzern, mit starkem Fokus auf Performance und Skalierbarkeit.",
+      project2Impact: "2M+ Aktive Nutzer",
       project2ImpactLabel: "Skalierung & Wirkung",
       project2Role: "React Native Developer Sr.",
     },
@@ -55,7 +55,7 @@ const screens: ScreensTranslations = {
       role1Desc:
         "Entwicklung und Wartung neuer Features für Paraguays führende elektronische Wallet. Zusammenarbeit in einem Team mit Fokus auf hochwertige UX, Performance-Optimierung und Skalierbarkeit.",
       role1Item1:
-        "Mitwirkung an einer Plattform mit über 1 Million aktiven Nutzern.",
+        "Mitwirkung an einer Plattform mit über 2 Millionen aktiven Nutzern.",
       role1Item2:
         "Fokus auf Performance, Code-Qualität und skalierbare Architektur mit React Native, TypeScript, Redux, Sentry, OneSignal und Rive.",
       role2Period: "2022 — 2024",
@@ -145,7 +145,7 @@ const screens: ScreensTranslations = {
         appearance1: "PadelSys",
         appearance1Detail: "Padel-Turniere",
         appearance2: "Billetera Mango",
-        appearance2Detail: "Fintech · 1M+ Nutzer",
+        appearance2Detail: "Fintech · 2M+ Nutzer",
         appearance3: "Conti Móvil",
         appearance3Detail: "Banking · 450K+ Nutzer",
       },
@@ -156,7 +156,7 @@ const screens: ScreensTranslations = {
       subtitle: "Beruflicher Werdegang",
       title: "Erfahrung",
       description:
-        "Über 6 Jahre Entwicklung wirkungsvoller mobiler und Web-Produkte in den Bereichen Finanzen, Gesundheit und Sport von Banking-Apps mit 450K Nutzern bis hin zu einer Fintech-Wallet mit über 1 Million.",
+        "Über 6 Jahre Entwicklung wirkungsvoller mobiler und Web-Produkte in den Bereichen Finanzen, Gesundheit und Sport von Banking-Apps mit 450K Nutzern bis hin zu einer Fintech-Wallet mit über 2 Millionen.",
     },
     projects: {
       worksLabel: "Veröffentlichte Projekte",
@@ -164,8 +164,8 @@ const screens: ScreensTranslations = {
       project1Alt: "Billetera Mango Fintech App",
       project1Title: "Billetera Mango",
       project1Desc:
-        "React Native Entwickler für eine der meistgenutzten Fintech-Apps Paraguays. Entwicklung und Wartung hochwertiger Features für eine elektronische Wallet mit über 1 Million aktiven Nutzern, mit starkem Fokus auf Performance und Skalierbarkeit.",
-      project1Impact: "1M+ Aktive Nutzer",
+        "React Native Entwickler für eine der meistgenutzten Fintech-Apps Paraguays. Entwicklung und Wartung hochwertiger Features für eine elektronische Wallet mit über 2 Millionen aktiven Nutzern, mit starkem Fokus auf Performance und Skalierbarkeit.",
+      project1Impact: "2M+ Aktive Nutzer",
       project1ImpactLabel: "Skalierung & Wirkung",
       project1Role: "React Native Developer Sr.",
       project2Alt: "Conti Móvil Banking App",
@@ -207,7 +207,7 @@ const screens: ScreensTranslations = {
       company1: "Billetera Mango",
       role1: "React Native Developer Sr.",
       role1Item1:
-        "Entwicklung und Wartung neuer Features für eine elektronische Wallet mit über 1 Million aktiven Nutzern.",
+        "Entwicklung und Wartung neuer Features für eine elektronische Wallet mit über 2 Millionen aktiven Nutzern.",
       role1Item2:
         "Zusammenarbeit in einem Scrum-Team zur Lieferung hochwertiger UX mit Fokus auf Performance und Skalierbarkeit.",
       role1Item3:
@@ -279,7 +279,7 @@ const screens: ScreensTranslations = {
       },
       trustIndicator: {
         trustText:
-          "Gearbeitet an Apps, die von über 1,5 Millionen Menschen in Paraguay genutzt werden.",
+          "Gearbeitet an Apps, die von über 2 Millionen Menschen in Paraguay genutzt werden.",
       },
     },
   },
