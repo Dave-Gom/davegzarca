@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 interface ProjectCardProps {
   images: string[];
@@ -31,7 +31,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(images.length > 1);
 
   const updateScrollState = () => {
     const el = scrollRef.current;
@@ -39,10 +39,6 @@ const ProjectCard = ({
     setCanScrollLeft(el.scrollLeft > 2);
     setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 2);
   };
-
-  useEffect(() => {
-    updateScrollState();
-  }, []);
 
   const scroll = (direction: "left" | "right") => {
     const el = scrollRef.current;

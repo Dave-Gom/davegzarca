@@ -21,6 +21,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "analytics", text: t.role6Item3 },
         ]}
         position="left"
+        url="https://www.ploutosapp.com.py/"
       />
 
       <TimelineItem
@@ -35,6 +36,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "groups", text: t.role1Item3 },
         ]}
         position="right"
+        url="https://mangoapp.com.py/"
       />
 
       <TimelineItem
@@ -48,6 +50,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "layers", text: t.role5Item3 },
         ]}
         position="left"
+        url="https://www.padelsys.com/"
       />
 
       <TimelineItem
@@ -61,6 +64,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "monitoring", text: t.role2Item3 },
         ]}
         position="right"
+        url="https://www.bancontinental.com.py/"
       />
 
       <TimelineItem
@@ -74,6 +78,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "layers", text: t.role3Item3 },
         ]}
         position="left"
+        url="https://www.arco.com.py/"
       />
 
       <TimelineItem
@@ -87,6 +92,7 @@ const ExperienceTimeline = ({ t }: ExperienceTimelineProps) => {
           { icon: "layers", text: t.role4Item3 },
         ]}
         position="right"
+        url="https://www.servicronos.com/"
         isLast
       />
     </div>

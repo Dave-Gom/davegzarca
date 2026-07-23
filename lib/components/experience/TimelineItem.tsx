@@ -7,6 +7,7 @@ interface TimelineItemProps {
   items: { icon: string; text: string }[];
   position?: "left" | "right";
   isLast?: boolean;
+  url?: string;
 }
 
 const TimelineItem = ({
@@ -18,6 +19,7 @@ const TimelineItem = ({
   items,
   position = "left",
   isLast = false,
+  url,
 }: TimelineItemProps) => {
   const isCurrent = badgeVariant === "current";
   const dotClasses = isCurrent
@@ -41,7 +43,18 @@ const TimelineItem = ({
         }`}
       >
         <h3 className="text-xl font-semibold text-primary-container">
-          {company}
+          {url ? (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline decoration-2 underline-offset-4"
+            >
+              {company}
+            </a>
+          ) : (
+            company
+          )}
         </h3>
         <span className={`text-sm px-3 py-1 rounded-full ${badgeClasses}`}>
           {badge}
